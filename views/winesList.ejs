@@ -1,16 +1,20 @@
 <div class="span4" >
-<div class="well sidebar-nav">
-<ul class="nav nav-list">
-  <% list(wines, function(wine){ %>
-    <li <%= (el)-> el.data('wine', wine) %>>
-      <%== can.view.render('views/wineView.ejs', {
-        wine: wine
-      }) %>
-    </li>
-  <% }) %>
-</ul>
-</div>
-</div>
+
+    <div class="well sidebar-nav">
+
+        <ul class="nav nav-list">
+          <% list(wines, function(wine){ %>
+            <li <%= (el)-> el.data('wine', wine) %>>
+              <%== can.view.render('views/wineView.ejs', {
+                wine: wine
+              }) %>
+            </li>
+          <% }) %>
+        </ul>
+
+    </div><!--/sidebar-->
+
+</div><!--/span4-->
 
 <div class="span8" >
 
@@ -18,40 +22,37 @@
 
 <div class="row-fluid">
     <div class="span4">
+        <div class="mainArea">
 
+            <label>Id:</label>
+            <input id="wineId" name="id" type="text" disabled />
 
-            <div class="mainArea">
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label>Id:</label>
-                <input id="wineId" name="id" type="text" disabled />
+            <label>Grapes:</label>
+            <input type="text" id="grapes" name="grapes"/>
 
-                <label>Name:</label>
-                <input type="text" id="name" name="name" required>
+            <label>Country:</label>
+            <input type="text" id="country" name="country"/>
 
-                <label>Grapes:</label>
-                <input type="text" id="grapes" name="grapes"/>
+            <label>Region:</label>
+            <input type="text" id="region" name="region"/>
 
-                <label>Country:</label>
-                <input type="text" id="country" name="country"/>
+            <label>Year:</label>
+            <input type="text" id="year" name="year"/>
 
-                <label>Region:</label>
-                <input type="text" id="region" name="region"/>
-
-                <label>Year:</label>
-                <input type="text" id="year" name="year"/>
-
-            </div>
-
+        </div><!--/mainArea-->
     </div><!--/span-->
 
     <div class="span4">
         <img id="pic" height="300"/>
         <label>Notes:</label>
         <textarea id="description" name="description"></textarea>
-    </div><!--/span-->
+    </div><!--/span4-->
 
 </div><!--/row-->
 
 </form>
 
-</div>
+</div><!--/span8-->
