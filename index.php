@@ -1,4 +1,4 @@
-<?php require(header.php"); ?>
+<?php require("header.php"); ?>
 
 
     <div class="row-fluid">
@@ -12,4 +12,4 @@
 
     </div><!--/row-->
 
-<?php require(footer.php"); ?>
+<?php require("footer.php"); ?>
