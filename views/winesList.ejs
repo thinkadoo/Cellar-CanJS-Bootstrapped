@@ -1,3 +1,4 @@
+<div class="span4" >
 <div class="well sidebar-nav">
 <ul class="nav nav-list">
   <% list(wines, function(wine){ %>
@@ -8,4 +9,49 @@
     </li>
   <% }) %>
 </ul>
+</div>
+</div>
+
+<div class="span8" >
+
+<form id="wineForm">
+
+<div class="row-fluid">
+    <div class="span4">
+
+
+            <div class="mainArea">
+
+                <label>Id:</label>
+                <input id="wineId" name="id" type="text" disabled />
+
+                <label>Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label>Grapes:</label>
+                <input type="text" id="grapes" name="grapes"/>
+
+                <label>Country:</label>
+                <input type="text" id="country" name="country"/>
+
+                <label>Region:</label>
+                <input type="text" id="region" name="region"/>
+
+                <label>Year:</label>
+                <input type="text" id="year" name="year"/>
+
+            </div>
+
+    </div><!--/span-->
+
+    <div class="span4">
+        <img id="pic" height="300"/>
+        <label>Notes:</label>
+        <textarea id="description" name="description"></textarea>
+    </div><!--/span-->
+
+</div><!--/row-->
+
+</form>
+
 </div>
