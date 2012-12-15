@@ -13,14 +13,15 @@
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
+            this.hide();
         },
 
         show: function(){
-            this.element.slideDown(200);
+            this.element.fadeIn(500);
         },
 
         hide: function(){
-            this.element.slideUp(200);
+            this.element.fadeOut(0);
         },
 
         renderDetails: function(wine) {
@@ -34,15 +35,17 @@
             $('#description').val(wine.description);
         },
 
+        '{document} .hero-unit click': function(el){
+            this.show();
+        },
+
         '{document} #wines li click': function(el){
             var that = this;
             var index = $("a",el).attr("id");
             Wine.findOne({'id': index}).then(function(oneResponse){
-                    wine = oneResponse;
-                    that.renderDetails(wine);
+                    that.renderDetails(oneResponse);
                 }
             )
-
         }
 
     });
@@ -50,10 +53,8 @@
     $(document).ready(function () {
 
         $.when(Wine.findAll().then(function (wineResponse) {
-            var wines = wineResponse;
             new Wines('#wines', {
-                wines:wines
-
+                wines:wineResponse
             });
         }));
 
