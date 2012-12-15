@@ -1,0 +1,11 @@
+<div class="well sidebar-nav">
+<ul class="nav nav-list">
+  <% list(wines, function(wine){ %>
+    <li <%= (el)-> el.data('wine', wine) %>>
+      <%== can.view.render('views/wineView.ejs', {
+        wine: wine
+      }) %>
+    </li>
+  <% }) %>
+</ul>
+</div>
