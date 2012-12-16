@@ -9,7 +9,7 @@
 
     Wines = can.Control({
 
-        init:function(){
+        init: function(){
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
