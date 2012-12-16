@@ -28,9 +28,9 @@ class Wine
             $stmt = $db->query($sql);
             $wines = $stmt->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            echo json_encode($wines);
+            return json_encode($wines);
         } catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
 
     }
@@ -44,9 +44,9 @@ class Wine
             $stmt->execute();
             $wine = $stmt->fetchObject();
             $db = null;
-            echo json_encode($wine);
+            return json_encode($wine);
         } catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
     }
 
@@ -67,10 +67,10 @@ class Wine
             $stmt->execute();
             $wine->id = $db->lastInsertId();
             $db = null;
-            echo json_encode($wine);
+            return json_encode($wine);
         } catch(PDOException $e) {
             error_log($e->getMessage(), 3, '/var/tmp/php.log');
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
     }
 
@@ -91,9 +91,9 @@ class Wine
             $stmt->bindParam("id", $id);
             $stmt->execute();
             $db = null;
-            echo json_encode($wine);
+            return json_encode($wine);
         } catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
     }
 
@@ -106,7 +106,7 @@ class Wine
             $stmt->execute();
             $db = null;
         } catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
     }
 
@@ -120,9 +120,9 @@ class Wine
             $stmt->execute();
             $wines = $stmt->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            echo '{"wine": ' . json_encode($wines) . '}';
+            return '{"wine": ' . json_encode($wines) . '}';
         } catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
+            return '{"error":{"text":'. $e->getMessage() .'}}';
         }
     }
 

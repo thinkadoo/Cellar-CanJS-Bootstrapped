@@ -8,6 +8,7 @@
 
 require 'Slim/Slim.php';
 require 'models/Wine.php';
+require 'controllers/Main.php';
 
 $app = new Slim();
 
@@ -19,33 +20,3 @@ $app->put('/wines/:id', 'updateWine');
 $app->delete('/wines/:id',	'deleteWine');
 
 $app->run();
-
-function getWines() {
-    $w = new Wine();
-    $w->getWines();
-}
-
-function getWine($id) {
-    $w = new Wine();
-    $w->getWine($id);
-}
-
-function addWine() {
-    $w = new Wine();
-    $w->addWine();
-}
-
-function updateWine($id) {
-    $w = new Wine();
-    $w->updateWine($id);
-}
-
-function deleteWine($id) {
-    $w = new Wine();
-    $w->deleteWine($id);
-}
-
-function findByName($query) {
-    $w = new Wine();
-    $w->findByName($query);
-}
