@@ -13,7 +13,7 @@ Set Up:
 
 3. Deploy the webapp included in this repository.
 4. Open api/index.php. In the getConnection() function at the bottom of the page, make sure the connection parameters match your database configuration. 
-5. Open main.js and make sure the rootURL variable matches your deployment configuration.
+5. Open application.js and make sure the rootURL variable matches your deployment configuration.
 6. Access the application in your browser. For example: http://localhost/cellar.
 
 Credit: http://coenraets.org/blog/2011/12/restful-services-with-jquery-php-and-the-slim-framework/
