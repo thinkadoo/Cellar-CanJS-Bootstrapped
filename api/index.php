@@ -2,6 +2,7 @@
 
 require_once 'vendor/autoload.php';
 require_once 'functions/main.php';
+require_once 'functions/utilities.php';
 require 'lib/Wine.php';
 
 \Slim\Slim::registerAutoloader();

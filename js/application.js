@@ -2,14 +2,18 @@
 
     Wine = can.Model({
 
-        findAll:'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines',
-        findOne:'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}'
+        findAll : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines',
+        findOne : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}',
+        create  : 'POST //localhost/Cellar-CanJS-Bootstrapped/api/wines',
+        update  : 'PUT //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}',
+        destroy : 'DELETE //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}'
 
     }, {});
 
     Wines = can.Control({
 
         init: function(){
+            this.wine = new Wine();
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
@@ -33,6 +37,16 @@
             $('#year').val(wine.year);
             $('#pic').attr('src', 'pics/' + wine.picture);
             $('#description').val(wine.description);
+        },
+
+        createWine: function() {
+            var form = this.element.find('form');
+            values = can.deparam(form.serialize());
+            this.wine.attr(values).save();
+        },
+
+        '.save click': function(el){
+            this.createWine();
         },
 
         '{document} .hero-unit click': function(el){

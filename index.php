@@ -4,7 +4,7 @@
     <div class="row-fluid">
         <div class="hero-unit">
             <h1>Your Cellar</h1>
-            <p>This is large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p>This is large callout called the hero unit and three supporting pieces of content.</p>
         </div>
     </div>
 

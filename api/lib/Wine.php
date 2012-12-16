@@ -50,11 +50,9 @@ class Wine
         }
     }
 
-    public function addWine() {
-        error_log('addWine\n', 3, '/var/tmp/php.log');
-        $request = Slim::getInstance()->request();
-        $wine = json_decode($request->getBody());
-        $sql = "INSERT INTO wine (name, grapes, country, region, year, description) VALUES (:name, :grapes, :country, :region, :year, :description)";
+    public function addWine($wine) {
+        $sql = "INSERT INTO wine (name, grapes, country, region, year, description, picture) VALUES (:name, :grapes, :country, :region, :year, :description, :picture)";
+        $defaultImage = "default.jpg";
         try {
             $db = $this->dbo->getConnection();
             $stmt = $db->prepare($sql);
@@ -64,6 +62,7 @@ class Wine
             $stmt->bindParam("region", $wine->region);
             $stmt->bindParam("year", $wine->year);
             $stmt->bindParam("description", $wine->description);
+            $stmt->bindParam("picture", $defaultImage);
             $stmt->execute();
             $wine->id = $db->lastInsertId();
             $db = null;
