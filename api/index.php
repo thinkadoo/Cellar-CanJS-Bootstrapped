@@ -1,22 +1,35 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: nomad
- * Date: 2012/12/15
- * Time: 8:45 AM
- */
 
-require 'Slim/Slim.php';
-require 'models/Wine.php';
-require 'controllers/Main.php';
+require_once 'vendor/autoload.php';
+require_once 'functions/main.php';
+require 'lib/Wine.php';
 
-$app = new Slim();
+\Slim\Slim::registerAutoloader();
+Twig_Autoloader::register();
 
+$app = new \Slim\Slim();
+
+
+
+// GET routes
+$app->get('/', 'welcome');
+$app->get('/hello/:name', 'sayHello');
 $app->get('/wines', 'getWines');
 $app->get('/wines/:id',	'getWine');
 $app->get('/wines/search/:query', 'findByName');
+
+// POST routes
+$app->post('/post', 'postResponse');
 $app->post('/wines', 'addWine');
+
+// PUT routes
+$app->put('/put', 'putResponse');
 $app->put('/wines/:id', 'updateWine');
+
+// DELETE routes
+$app->delete('/delete', 'deleteResponse');
 $app->delete('/wines/:id',	'deleteWine');
+
+
 
 $app->run();

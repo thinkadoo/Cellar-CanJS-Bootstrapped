@@ -1,0 +1,6 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.*"
+    }
+}

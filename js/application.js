@@ -2,8 +2,8 @@
 
     Wine = can.Model({
 
-        findAll:'GET /cellar/api/wines',
-        findOne:'GET /cellar/api/wines/{id}'
+        findAll:'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines',
+        findOne:'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}'
 
     }, {});
 
