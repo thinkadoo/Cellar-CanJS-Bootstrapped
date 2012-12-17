@@ -73,10 +73,7 @@ class Wine
         }
     }
 
-    public function updateWine($id) {
-        $request = Slim::getInstance()->request();
-        $body = $request->getBody();
-        $wine = json_decode($body);
+    public function updateWine($wine,$id) {
         $sql = "UPDATE wine SET name=:name, grapes=:grapes, country=:country, region=:region, year=:year, description=:description WHERE id=:id";
         try {
             $db = $this->dbo->getConnection();

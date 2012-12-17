@@ -58,8 +58,13 @@ function addWine() {
 }
 
 function updateWine($id) {
+    global $app;
     $w = new Wine();
-    $result = $w->updateWine($id);
+    $request = $app->request();
+    $wine = ($request->getBody());
+    $requestArray = urldecode_to_array($wine);
+    $requestObject = array_to_object($requestArray);
+    $result = $w->updateWine($requestObject,$id);
     echo $result;
 }
 

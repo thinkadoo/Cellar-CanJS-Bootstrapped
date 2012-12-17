@@ -45,8 +45,21 @@
             this.wine.attr(values).save();
         },
 
+        updateWine: function(el){
+            var wine = el.closest('.wine').data('wine');
+            wine.attr(el.attr('name'), el.val()).save();
+        },
+
         '.save click': function(el){
             this.createWine();
+        },
+
+        '.remove click': function(el, ev){
+            el.closest('.wine').data('wine').destroy();
+        },
+
+        '.update click': function(el, ev) {
+            this.updateWine(el);
         },
 
         '{document} .hero-unit click': function(el){
