@@ -53,19 +53,19 @@
             this.wine.attr(values).save();
         },
 
-        '.save click': function(el){
+        '.save click': function(){
             this.createWine();
         },
 
-        '.remove click': function(el, ev){
+        '.remove click': function(){
             this.wine.destroy();
         },
 
-        '.update click': function(el, ev) {
-            this.updateWine(el);
+        '.update click': function() {
+            this.updateWine();
         },
 
-        '{document} .hero-unit click': function(el){
+        '{document} .hero-unit click': function(){
             this.show();
         },
 
@@ -75,7 +75,6 @@
             Wine.findOne({'id': index}).then(function(oneResponse){
                     that.wine = oneResponse;
                     that.renderDetails();
-                    //that.renderDetails(oneResponse);
                 }
             )
         }
