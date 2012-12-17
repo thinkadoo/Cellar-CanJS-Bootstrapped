@@ -28,26 +28,29 @@
             this.element.fadeOut(0);
         },
 
-        renderDetails: function(wine) {
-            $('#wineId').val(wine.id);
-            $('#name').val(wine.name);
-            $('#grapes').val(wine.grapes);
-            $('#country').val(wine.country);
-            $('#region').val(wine.region);
-            $('#year').val(wine.year);
-            $('#pic').attr('src', 'pics/' + wine.picture);
-            $('#description').val(wine.description);
+        renderDetails: function() {
+            $('#wineId').val(this.wine.id);
+            $('#name').val(this.wine.name);
+            $('#grapes').val(this.wine.grapes);
+            $('#country').val(this.wine.country);
+            $('#region').val(this.wine.region);
+            $('#year').val(this.wine.year);
+            $('#pic').attr('src', 'pics/' + this.wine.picture);
+            $('#description').val(this.wine.description);
         },
 
         createWine: function() {
             var form = this.element.find('form');
             values = can.deparam(form.serialize());
-            this.wine.attr(values).save();
+            this.wine.attr(values);
+            this.wine.removeAttr('id');
+            this.wine.save();
         },
 
-        updateWine: function(el){
-            var wine = el.closest('.wine').data('wine');
-            wine.attr(el.attr('name'), el.val()).save();
+        updateWine: function(){
+            var form = this.element.find('form');
+            values = can.deparam(form.serialize());
+            this.wine.attr(values).save();
         },
 
         '.save click': function(el){
@@ -55,7 +58,7 @@
         },
 
         '.remove click': function(el, ev){
-            el.closest('.wine').data('wine').destroy();
+            this.wine.destroy();
         },
 
         '.update click': function(el, ev) {
@@ -70,7 +73,9 @@
             var that = this;
             var index = $("a",el).attr("id");
             Wine.findOne({'id': index}).then(function(oneResponse){
-                    that.renderDetails(oneResponse);
+                    that.wine = oneResponse;
+                    that.renderDetails();
+                    //that.renderDetails(oneResponse);
                 }
             )
         }
