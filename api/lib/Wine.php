@@ -52,7 +52,7 @@ class Wine
 
     public function addWine($wine) {
         $sql = "INSERT INTO wine (name, grapes, country, region, year, description, picture) VALUES (:name, :grapes, :country, :region, :year, :description, :picture)";
-        $defaultImage = "default.jpg";
+        $defaultImage = "generic.jpg";
         try {
             $db = $this->dbo->getConnection();
             $stmt = $db->prepare($sql);

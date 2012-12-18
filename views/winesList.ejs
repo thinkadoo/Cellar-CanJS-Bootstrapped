@@ -3,12 +3,13 @@
     <div class="well sidebar-nav">
 
         <ul class="nav nav-list">
-          <% list(wines, function(wine){ %>
-            <li <%= (el)-> el.data('wine', wine) %>>
-              <%== can.view.render('views/wineView.ejs', {
-                wine: wine
-              }) %>
-            </li>
+          <% wines.attr('length');
+             wines.each(function(wine){ %>
+                <li <%= (el)-> el.data('wine', wine) %>>
+                     <%== can.view.render('views/wineView.ejs', {
+                       wine: wine
+                     }) %>
+                </li>
           <% }) %>
         </ul>
 
@@ -45,14 +46,16 @@
         </div><!--/mainArea-->
     </div><!--/span-->
 
-    <div class="span4">
+    <div class="span6">
         <img id="pic" height="300"/>
         <label>Notes:</label>
-        <textarea id="description" name="description"></textarea>
+        <a href="javascript://" class="btn btn-primary new">New</a>
         <a href="javascript://" class="btn btn-primary save">Save</a>
         <a href="javascript://" class="btn btn-primary update">Update</a>
         <a href="javascript://" class="btn btn-primary remove">Delete</a>
-    </div><!--/span4-->
+        <br>
+        <textarea id="description" name="description" ></textarea>
+    </div><!--/span6-->
 
 </div><!--/row-->
 

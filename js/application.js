@@ -17,7 +17,7 @@
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
-            this.hide();
+            //this.hide();
         },
 
         show: function(){
@@ -39,9 +39,21 @@
             $('#description').val(this.wine.description);
         },
 
+        newWine: function() {
+            $('#wineId').val('');
+            $('#name').val('');
+            $('#grapes').val('');
+            $('#country').val('');
+            $('#region').val('');
+            $('#year').val('');
+            $('#pic').attr('src', 'pics/generic.jpg');
+            $('#description').val('');
+        },
+
         createWine: function() {
             var form = this.element.find('form');
             values = can.deparam(form.serialize());
+            this.wine = new Wine();
             this.wine.attr(values);
             this.wine.removeAttr('id');
             this.wine.save();
@@ -53,12 +65,21 @@
             this.wine.attr(values).save();
         },
 
+        deleteWine: function(){
+            this.wine.destroy();
+            this.newWine();
+        },
+
+        '.new click': function(){
+            this.newWine();
+        },
+
         '.save click': function(){
             this.createWine();
         },
 
         '.remove click': function(){
-            this.wine.destroy();
+            this.deleteWine();
         },
 
         '.update click': function() {
@@ -88,6 +109,7 @@
                 wines:wineResponse
             });
         }));
+
 
     });
 
