@@ -55,10 +55,10 @@
             values = can.deparam(form.serialize());
             this.wine = new Wine();
             this.wine.attr(values);
-            //this.wine.removeAttr('id');
+            this.wine.attr('picture','generic.jpg');
+            this.wine.removeAttr('id');
             this.wine.save();
             this.options.wines.push(this.wine);
-            console.log(this.options.wines);
         },
 
         updateWine: function(){
