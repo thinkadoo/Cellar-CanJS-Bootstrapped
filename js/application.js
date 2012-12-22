@@ -17,15 +17,6 @@
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
-            //this.hide();
-        },
-
-        show: function(){
-            this.element.fadeIn(500);
-        },
-
-        hide: function(){
-            this.element.fadeOut(0);
         },
 
         renderDetails: function() {
@@ -86,10 +77,6 @@
 
         '.update click': function() {
             this.updateWine();
-        },
-
-        '{document} .hero-unit click': function(){
-            this.show();
         },
 
         '{document} #wines li click': function(el){
