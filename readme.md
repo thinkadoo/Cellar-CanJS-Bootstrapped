@@ -17,7 +17,7 @@ Set Up:
 6. Access the application in your browser. For example: http://localhost/cellar.
 
 Screenshot:
-http://cl.ly/LfQO
+http://cl.ly/LnQv
 
 Credit: http://coenraets.org/blog/2011/12/restful-services-with-jquery-php-and-the-slim-framework/
 
