@@ -12,7 +12,7 @@
     <div class="row-fluid">
         <div class="span4">
             <h3>CanJS</h3>
-            <p>CanJS is a MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. It's unique annotated style and OOP foundation lays the foundation for powerful MVC architectures. </p>
+            <p>CanJS is a MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. It's unique annotated style and OOP approach lays the foundation for powerful MVC architectures. </p>
             <p><a class="btn" href="http://canjs.us/" target="_blank">View details &raquo;</a></p>
         </div>
         <div class="span4">
