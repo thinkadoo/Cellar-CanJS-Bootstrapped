@@ -20,15 +20,15 @@ $app->get('/wines/:id',	'getWine');
 $app->get('/wines/search/:query', 'findByName');
 
 // POST routes
-$app->post('/post', 'postResponse');
+$app->post('/', 'postResponse');
 $app->post('/wines', 'addWine');
 
 // PUT routes
-$app->put('/put', 'putResponse');
+$app->put('/', 'putResponse');
 $app->put('/wines/:id', 'updateWine');
 
 // DELETE routes
-$app->delete('/delete', 'deleteResponse');
+$app->delete('/', 'deleteResponse');
 $app->delete('/wines/:id',	'deleteWine');
 
 
