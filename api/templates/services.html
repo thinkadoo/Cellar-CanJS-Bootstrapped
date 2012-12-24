@@ -104,8 +104,8 @@
                 <div class="container">
                     <ul class="nav">
                         <li><a href="./">Home</a></li>
-                        <li class="active"><a href="data.php">Data</a></li>
-                        <li><a href="services.php">Services</a></li>
+                        <li><a href="data.php">Data</a></li>
+                        <li class="active"><a href="">Services</a></li>
                         <li><a href="#">Downloads</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -118,36 +118,32 @@
 
     <div class="row-fluid">
         <div class="span12">
-            <h2>Data</h2>
+            <h2>Services</h2>
 
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>year</th>
-                    <th>grapes</th>
-                    <th>country</th>
-                    <th>region</th>
-                    <th>description</th>
-                    <th>picture</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for wine in wines %}
-                <tr>
-                    <td>{{ wine.id }}</td>
-                    <td>{{ wine.name }}</td>
-                    <td>{{ wine.year }}</td>
-                    <td>{{ wine.grapes }}</td>
-                    <td>{{ wine.country }}</td>
-                    <td>{{ wine.region }}</td>
-                    <td>{{ wine.description }}</td>
-                    <td>{{ wine.picture }}</td>
-                </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+        <hr>
+            <h3>GET wines</h3>
+            <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines</h4>
+            {{ wines }}
+
+        <hr>
+            <h3>GET wines/1</h3>
+            <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
+            {{ wine }}
+
+        <hr>
+            <h3>POST wines/</h3>
+            <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/</h4>
+            <p>Add a wine to the DataBase. </p>
+
+        <hr>
+            <h3>PUT wines/1</h3>
+            <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
+            <p>Update a wine in the DataBase. </p>
+
+        <hr>
+            <h3>DELETE wines/1</h3>
+            <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
+            <p>Delete a wine from the DataBase. </p>
 
         </div>
 
