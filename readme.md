@@ -2,7 +2,7 @@
 This application provides an example of:
 
 1. Building a complete RESTful API in PHP using the Slim framework.
-2. Consuming these services using jQuery
+2. Consuming these services using CanJS-Model
 
 Set Up:
 
@@ -12,7 +12,7 @@ Set Up:
 	mysql cellar -uroot < cellar.sql
 
 3. Deploy the webapp included in this repository.
-4. Open api/index.php. In the getConnection() function at the bottom of the page, make sure the connection parameters match your database configuration. 
+4. Open Cellar-CanJS-Bootstrapped / api / lib / Database.php. In the getConnection() function at the bottom of the page, make sure the connection parameters match your database configuration.
 5. Open application.js and make sure the rootURL variable matches your deployment configuration.
 6. Access the application in your browser. For example: http://localhost/Cellar-CanJS-Bootstrapped/.
 
