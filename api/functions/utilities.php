@@ -6,6 +6,16 @@
  * Time: 8:39 PM
  * To change this template use File | Settings | File Templates.
  */
+
+function loadTwig(){
+    $loader = new Twig_Loader_Filesystem('templates');
+    $twig = new Twig_Environment($loader, array(
+        'cache' => false,
+        'debug' => true
+    ));
+    return $twig;
+}
+
 function urldecode_to_array ($url) {
     $ret_ar = array();
 

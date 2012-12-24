@@ -103,8 +103,8 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="data.php">Data</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">About</a></li>
@@ -144,6 +144,45 @@
       </div>
 
       <hr>
+
+        <div class="row-fluid">
+            <div class="span12">
+                <h2>Data</h2>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>year</th>
+                        <th>grapes</th>
+                        <th>country</th>
+                        <th>region</th>
+                        <th>description</th>
+                        <th>picture</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for wine in wines %}
+                        <tr>
+                        <td>{{ wine.id }}</td>
+                        <td>{{ wine.name }}</td>
+                        <td>{{ wine.year }}</td>
+                        <td>{{ wine.grapes }}</td>
+                        <td>{{ wine.country }}</td>
+                        <td>{{ wine.region }}</td>
+                        <td>{{ wine.description }}</td>
+                        <td>{{ wine.picture }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <hr>
 
       <div class="footer">
         <p>&copy; Company 2012</p>
