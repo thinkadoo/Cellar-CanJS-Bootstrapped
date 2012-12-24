@@ -123,26 +123,35 @@
         <hr>
             <h3>GET wines</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines</h4>
-            {{ wines }}
+            <p>{{ wines }}</p>
+            <p>Get all wines from the DataBase. </p>
 
         <hr>
             <h3>GET wines/1</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
-            {{ wine }}
+            <p>{{ wine }}</p>
+            <p>Get a wine from the DataBase. </p>
 
         <hr>
             <h3>POST wines/</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/</h4>
+            <h5>POST vars:</h5>
+            <p>name=CHATEAU+DE+SAINT+COSME&grapes=Grenache+%2F+Syrah&country=France&region=Southern+Rhone+%2F+Gigondas&year=2009&description=The+aromas+of+fruit+and+spice+give+one+a+hint+of+the+light+drinkability+of+this+lovely+wine%2C+which+makes+an+excellent+complement+to+fish+dishes.&picture=generic.jpg</p>
+            <p>{"name":"CHATEAU DE SAINT COSME","grapes":"Grenache \/ Syrah","country":"France","region":"Southern Rhone \/ Gigondas","year":"2009","description":"The aromas of fruit and spice give one a hint of the light drinkability of this lovely wine, which makes an excellent complement to fish dishes.","picture":"generic.jpg","id":"2"}</p>
             <p>Add a wine to the DataBase. </p>
 
         <hr>
             <h3>PUT wines/1</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
+            <h5>PUT vars:</h5>
+            <p>name=CHATEAU+DE+SAINT+COSME&grapes=Grenache+%2F+Syrah&country=France&region=Southern+Rhone+%2F+Gigondas&year=2000&description=The+aromas+of+fruit+and+spice+give+one+a+hint+of+the+light+drinkability+of+this+lovely+wine%2C+which+makes+an+excellent+complement+to+fish+dishes.&picture=generic.jpg&id=2</p>
             <p>Update a wine in the DataBase. </p>
 
         <hr>
             <h3>DELETE wines/1</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/wines/1</h4>
+            <h5>DELETE vars:</h5>
+            <p>id=2</p>
             <p>Delete a wine from the DataBase. </p>
 
         </div>
