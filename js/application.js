@@ -17,6 +17,13 @@
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
+            var that = this;
+            var index = 1;
+            Wine.findOne({'id': index}).then(function(oneResponse){
+                    that.wine = oneResponse;
+                    that.renderDetails();
+                }
+            )
         },
 
         renderDetails: function() {
