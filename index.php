@@ -5,9 +5,8 @@
 
     </div><!--/row-->
 
-    <hr>
 
-    <h2>Appication</h2>
+    <hr>
 
     <div class="row-fluid">
         <div class="span4">
