@@ -5,6 +5,7 @@
  * Date: 2012/12/15
  * Time: 8:41 AM
  */
+
 class Database
 {
     var $dbn;
