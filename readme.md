@@ -38,7 +38,7 @@ Create a .js file with the following:
 
 	})();
 	
-Create an index.html file and load the .js file.
+Create an index.html file and load jquery-1.7.2.min.js , can.jquery-1.1.3.js and your .js file.
 Refresh the browser and open the console.
 Try findAll()
 
