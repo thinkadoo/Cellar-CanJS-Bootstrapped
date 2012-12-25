@@ -6,7 +6,7 @@
           <% wines.attr('length');
              wines.each(function(wine){ %>
                 <li <%= (el)-> el.data('wine', wine) %>>
-                     <%== can.view.render('views/wineView.ejs', {
+                     <%== can.view.render('views/wineItem.ejs', {
                        wine: wine
                      }) %>
                 </li>

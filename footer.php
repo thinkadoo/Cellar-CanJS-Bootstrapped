@@ -23,8 +23,7 @@
 <script src="js/bootstrap-collapse.js"></script>
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
-<script src="js/can.jquery.js"></script>
-<script src="js/can.fixture.js"></script>
+<script src="js/can.jquery-1.1.3.js"></script>
 <script src="js/application.js"></script>
 
 </body>

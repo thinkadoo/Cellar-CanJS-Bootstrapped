@@ -11,7 +11,6 @@
     }, {});
 
     Wines = can.Control({
-
         init: function(){
             this.wine = new Wine();
             this.element.html(can.view('views/winesList.ejs', {
