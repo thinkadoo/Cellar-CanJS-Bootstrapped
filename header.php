@@ -36,11 +36,11 @@
                 <div class="container">
                     <ul class="nav">
                         <li class="active"><a href="">Home</a></li>
-                        <li><a href="api/index.php/data">Data</a></li>
-                        <li><a href="api/index.php/services">Services</a></li>
-                        <li><a href="api/index.php/downloads">Downloads</a></li>
-                        <li><a href="api/index.php/about">About</a></li>
-                        <li><a href="api/index.php/contact">Contact</a></li>
+                        <li><a href="./api/index.php/data">Data</a></li>
+                        <li><a href="./api/index.php/services">Services</a></li>
+                        <li><a href="./api/index.php/downloads">Downloads</a></li>
+                        <li><a href="./api/index.php/about">About</a></li>
+                        <li><a href="./api/index.php/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
