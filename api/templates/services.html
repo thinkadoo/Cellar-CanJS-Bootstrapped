@@ -1,29 +1,35 @@
 {% include 'header.html' %}
 
-<div class="masthead">
-    <h3 class="muted">Cellar API</h3>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./data">Data</a></li>
-                    <li class="active"><a href="">Services</a></li>
-                    <li><a href="./downloads">Downloads</a></li>
-                    <li><a href="./about">About</a></li>
-                    <li><a href="./contact">Contact</a></li>
-                </ul>
+    <div class="masthead">
+        <h3 class="muted">Cellar API</h3>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./data">Data</a></li>
+                        <li class="active"><a href="">Services</a></li>
+                        <li><a href="./downloads">Downloads</a></li>
+                        <li><a href="./about">About</a></li>
+                        <li><a href="./contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div><!-- /.navbar -->
-</div>
+        </div><!-- /.navbar -->
+    </div>
 
 
     <div class="row-fluid">
         <div class="span12">
             <h2>Services</h2>
+            <hr>
+        </div>
+    </div>
 
-        <hr>
+    <div class="row-fluid">
+
+        <div class="span12">
+
             <h3>GET wines</h3>
             <h4>URL: http://localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines</h4>
             <p>{{ wines }}</p>
