@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/services.html" afterPath="$PROJECT_DIR$/api/templates/services.html" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,26 +21,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="3" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-18.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.4025845">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -63,13 +43,13 @@
         <option value="$PROJECT_DIR$/api/templates/footer.html" />
         <option value="$PROJECT_DIR$/api/templates/header.html" />
         <option value="$PROJECT_DIR$/api/templates/welcome.html" />
-        <option value="$PROJECT_DIR$/api/templates/services.html" />
         <option value="$PROJECT_DIR$/api/templates/downloads.html" />
         <option value="$PROJECT_DIR$/api/templates/data.html" />
         <option value="$PROJECT_DIR$/api/templates/contact.html" />
         <option value="$PROJECT_DIR$/api/templates/about.html" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/api/templates/services.html" />
       </list>
     </option>
   </component>
@@ -121,6 +101,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,13 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/templates/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="546" selection-end="562" vertical-scroll-proportion="0.19383697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/downloads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="24" selection-start="114" selection-end="114" vertical-scroll-proportion="0.059642147">
@@ -316,13 +303,6 @@
     <entry file="file://$PROJECT_DIR$/api/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="23" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.43240556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/templates/services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="373" selection-end="373" vertical-scroll-proportion="0.11782477">
           <folding />
         </state>
       </provider>
@@ -355,16 +335,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="3" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-18.125">
+        <state line="27" column="6" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.4025845">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.4025845">
+        <state line="29" column="3" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.43240556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/templates/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="78" selection-start="3097" selection-end="3097" vertical-scroll-proportion="0.8006042">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/templates/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="546" selection-end="562" vertical-scroll-proportion="0.19383697">
           <folding />
         </state>
       </provider>
