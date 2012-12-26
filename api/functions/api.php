@@ -4,7 +4,6 @@
  * User: nomad
  * Date: 2012/12/26
  * Time: 2:28 AM
- * To change this template use File | Settings | File Templates.
  */
 
 function getWines() {

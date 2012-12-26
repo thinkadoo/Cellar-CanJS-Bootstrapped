@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-require_once 'vendor/autoload.php';
+
 require_once 'functions/api.php';
 require_once 'functions/views.php';
 require_once 'lib/Wine.php';
@@ -24,3 +24,12 @@ function loadTwig(){
     ));
     return $twig;
 }
+
+$app->hook('slim.before.dispatch', function () use ($app) {
+    //print_r($app->request()->getRootUri());
+    //print_r($app->request()->getResourceUri());
+    //print_r($app->request()->cookies());
+    //print_r($app->request()->getUserAgent());
+    //print_r($app->request()->getIp());
+    //print_r($app->request()->isAjax());
+});
