@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/about.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/data.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/downloads.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/services.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/functions/main.php" afterPath="$PROJECT_DIR$/api/functions/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/functions/mainapi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/functions/mainviews.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/functions/main.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/about.html" afterPath="$PROJECT_DIR$/api/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/contact.html" afterPath="$PROJECT_DIR$/api/templates/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/data.html" afterPath="$PROJECT_DIR$/api/templates/data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/downloads.html" afterPath="$PROJECT_DIR$/api/templates/downloads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/services.html" afterPath="$PROJECT_DIR$/api/templates/services.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/templates/welcome.html" afterPath="$PROJECT_DIR$/api/templates/welcome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/application.js" afterPath="$PROJECT_DIR$/js/application.js" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +25,39 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="35" selection-start="42" selection-end="42" vertical-scroll-proportion="0.029821074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainviews.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/functions/mainviews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="1" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-40.666668">
+              <folding>
+                <element signature="e#6#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainapi.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/functions/mainapi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="1" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-33.125">
+              <folding>
+                <element signature="e#6#164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -49,7 +71,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/application.js" />
-        <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/api/templates/contact.html" />
         <option value="$PROJECT_DIR$/api/templates/about.html" />
         <option value="$PROJECT_DIR$/api/templates/data.html" />
@@ -57,13 +78,15 @@
         <option value="$PROJECT_DIR$/api/templates/services.html" />
         <option value="$PROJECT_DIR$/api/templates/welcome.html" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/api/functions/mainviews.php" />
+        <option value="$PROJECT_DIR$/api/functions/mainapi.php" />
         <option value="$PROJECT_DIR$/api/functions/main.php" />
+        <option value="$PROJECT_DIR$/api/index.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1916" />
     <option name="height" value="1178" />
@@ -94,7 +117,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -113,22 +135,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,8 +146,8 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../whatisthatstat.us" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -174,14 +183,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1916" height="1178" extended-state="6" />
+    <frame x="0" y="22" width="1916" height="1178" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20374331" sideWeight="0.6707663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20588236" sideWeight="0.6707663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -256,13 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/functions/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/functions/utilities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -271,13 +273,6 @@
     <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="0" selection-start="3293" selection-end="3293" vertical-scroll-proportion="1.6019417" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="429" selection-end="429" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/contact.html">
@@ -289,9 +284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="6" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-50.041668">
-          <folding />
-        </state>
+        <state line="88" column="6" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-50.041668" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
@@ -322,13 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/functions/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="17" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.4473161">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/services.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="16" selection-start="5447" selection-end="5447" vertical-scroll-proportion="1.4169184">
@@ -339,6 +325,31 @@
     <entry file="file://$PROJECT_DIR$/api/templates/data.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="16" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.85089463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/functions/mainviews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="1" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-40.666668">
+          <folding>
+            <element signature="e#6#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/functions/mainapi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="1" selection-start="1163" selection-end="1163" vertical-scroll-proportion="-33.125">
+          <folding>
+            <element signature="e#6#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="35" selection-start="42" selection-end="42" vertical-scroll-proportion="0.029821074">
           <folding />
         </state>
       </provider>
