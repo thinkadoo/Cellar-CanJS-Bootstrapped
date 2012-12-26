@@ -11,7 +11,6 @@
  * @copyright   2012 Andre Venter
  * @link        http://think-a-doo.net
  * @version     1.0.0
- * @package     Slim
  *
  * MIT LICENSE
  *
