@@ -65,3 +65,8 @@ body {
     border-right: 0;
     border-radius: 0 3px 3px 0;
 }
+
+#description {
+    width: 250px;
+    height: 85px;
+}
