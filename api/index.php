@@ -1,18 +1,10 @@
 <?php
 
-require_once 'vendor/autoload.php';
-require_once 'functions/mainapi.php';
-require_once 'functions/mainviews.php';
-require_once 'functions/utilities.php';
-require 'lib/Wine.php';
-
-\Slim\Slim::registerAutoloader();
-Twig_Autoloader::register();
+require_once 'functions/loader.php';
 
 $app = new \Slim\Slim();
 
-
-// GET API views
+// VIEWS //
 
 $app->get('/', 'welcome');
 $app->get('/data', 'data');
@@ -21,7 +13,7 @@ $app->get('/downloads', 'downloads');
 $app->get('/about', 'about');
 $app->get('/contact', 'contact');
 
-// API
+// API //
 
 // GET routes
 $app->get('/wines', 'getWines');
@@ -36,7 +28,5 @@ $app->put('/wines/:id', 'updateWine');
 
 // DELETE routes
 $app->delete('/wines/:id',	'deleteWine');
-
-
 
 $app->run();

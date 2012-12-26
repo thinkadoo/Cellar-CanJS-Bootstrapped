@@ -24,8 +24,9 @@ function addWine() {
     $w = new Wine();
     $request = $app->request();
     $wine = ($request->getBody());
-    $requestArray = urldecode_to_array($wine);
-    $requestObject = array_to_object($requestArray);
+    $utilities = new Utilities();
+    $requestArray = $utilities->urldecode_to_array($wine);
+    $requestObject = $utilities->array_to_object($requestArray);
     $result = $w->addWine($requestObject);
     echo $result;
 }
@@ -35,8 +36,9 @@ function updateWine($id) {
     $w = new Wine();
     $request = $app->request();
     $wine = ($request->getBody());
-    $requestArray = urldecode_to_array($wine);
-    $requestObject = array_to_object($requestArray);
+    $utilities = new Utilities();
+    $requestArray = $utilities->urldecode_to_array($wine);
+    $requestObject = $utilities->array_to_object($requestArray);
     $result = $w->updateWine($requestObject,$id);
     echo $result;
 }

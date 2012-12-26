@@ -14,7 +14,7 @@ class Database
 
     }
 
-    function getConnection() {
+    public function getConnection() {
         $dbhost="localhost";
         $dbuser="root";
         $dbpass="root";
