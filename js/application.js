@@ -2,11 +2,11 @@
 
     Wine = can.Model({
 
-        findAll : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines',
-        findOne : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}',
-        create  : 'POST //localhost/Cellar-CanJS-Bootstrapped/api/wines',
-        update  : 'PUT //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}',
-        destroy : 'DELETE //localhost/Cellar-CanJS-Bootstrapped/api/wines/{id}'
+        findAll : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines',
+        findOne : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines/{id}',
+        create  : 'POST //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines',
+        update  : 'PUT //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines/{id}',
+        destroy : 'DELETE //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines/{id}'
 
     }, {});
 
