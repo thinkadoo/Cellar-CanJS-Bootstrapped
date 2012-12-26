@@ -25,6 +25,16 @@
             )
         },
 
+        selectWine: function(el){
+            var that = this;
+            var index = $("a",el).attr("id");
+            Wine.findOne({'id': index}).then(function(oneResponse){
+                    that.wine = oneResponse;
+                    that.renderDetails();
+                }
+            )
+        },
+
         renderDetails: function() {
             $('#wineId').val(this.wine.id);
             $('#name').val(this.wine.name);
@@ -69,6 +79,10 @@
             this.newWine();
         },
 
+        '{document} #wines li click': function(el){
+            this.selectWine(el);
+        },
+
         '.new click': function(){
             this.newWine();
         },
@@ -83,16 +97,6 @@
 
         '.update click': function() {
             this.updateWine();
-        },
-
-        '{document} #wines li click': function(el){
-            var that = this;
-            var index = $("a",el).attr("id");
-            Wine.findOne({'id': index}).then(function(oneResponse){
-                    that.wine = oneResponse;
-                    that.renderDetails();
-                }
-            )
         }
 
     });
@@ -104,7 +108,6 @@
                 wines:wineResponse
             });
         }));
-
 
     });
 

@@ -36,11 +36,11 @@
                 <div class="container">
                     <ul class="nav">
                         <li class="active"><a href="">Home</a></li>
-                        <li><a href="api/data.php">Data</a></li>
-                        <li><a href="api/services.php">Services</a></li>
-                        <li><a href="api/downloads.php">Downloads</a></li>
-                        <li><a href="api/about.php">About</a></li>
-                        <li><a href="api/contact.php">Contact</a></li>
+                        <li><a href="api/index.php/data">Data</a></li>
+                        <li><a href="api/index.php/services">Services</a></li>
+                        <li><a href="api/index.php/downloads">Downloads</a></li>
+                        <li><a href="api/index.php/about">About</a></li>
+                        <li><a href="api/index.php/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,7 +51,7 @@
     <div class="jumbotron">
         <h1>Cellar</h1>
         <p class="lead">Cellar is a CanJS MVC App with a RESTful API backend. </p>
-        <a class="btn btn-large btn-primary" href="./api/">Slim server API</a>
+        <a class="btn btn-large btn-primary" href="./api/index.php/">Slim server API</a>
     </div>
 
     <hr>

@@ -11,9 +11,15 @@ Twig_Autoloader::register();
 $app = new \Slim\Slim();
 
 
+// GET API views
+$app->get('/', 'welcome');
+$app->get('/data', 'data');
+$app->get('/services', 'services');
+$app->get('/downloads', 'downloads');
+$app->get('/about', 'about');
+$app->get('/contact', 'contact');
 
 // GET routes
-$app->get('/', 'welcome');
 $app->get('/hello/:name', 'sayHello');
 $app->get('/wines', 'getWines');
 $app->get('/wines/:id',	'getWine');
