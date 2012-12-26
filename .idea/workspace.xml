@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/functions/loader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/lib/Utilities.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/functions/utilities.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/functions/mainapi.php" afterPath="$PROJECT_DIR$/api/functions/api.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/functions/mainviews.php" afterPath="$PROJECT_DIR$/api/functions/views.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/lib/Database.php" afterPath="$PROJECT_DIR$/api/lib/Database.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/css/lib/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/lib/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,17 +23,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08946322">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -121,70 +106,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="functions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -198,6 +119,11 @@
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/lib" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -238,13 +164,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1916" height="1178" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20802139" sideWeight="0.6707663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20802139" sideWeight="0.6707663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -314,7 +240,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="8" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-21.291666" />
+        <state line="80" column="8" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-21.291666">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/about.html">
@@ -322,34 +250,39 @@
         <state line="88" column="6" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-50.041668" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="59" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.58151096" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="57" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.53677934" />
+        <state line="53" column="57" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.53677934">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/downloads.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="16" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.87972164" />
+        <state line="85" column="16" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.87972164">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="16" selection-start="5447" selection-end="5447" vertical-scroll-proportion="1.4169184" />
+        <state line="116" column="16" selection-start="5447" selection-end="5447" vertical-scroll-proportion="1.4169184">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/templates/data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="16" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.85089463" />
+        <state line="112" column="16" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.85089463">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/application.js">
@@ -404,6 +337,13 @@
     <entry file="file://$PROJECT_DIR$/api/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08946322">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="59" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.58151096">
           <folding />
         </state>
       </provider>
