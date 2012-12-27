@@ -6,9 +6,6 @@
  * Time: 12:34 PM
  */
 
-require 'models/WineModel.php';
-require 'lib/Utilities.php';
-
 class WineController
 {
 

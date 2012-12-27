@@ -6,8 +6,6 @@
  * Time: 8:40 AM
  */
 
-require 'lib/Database.php';
-
 class WineModel
 {
 

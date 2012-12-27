@@ -14,6 +14,7 @@ require_once 'controllers/WineController.php' ;
 require_once 'models/WineModel.php';
 require_once 'views/Views.php';
 require_once 'lib/Utilities.php';
+require_once 'lib/Database.php';
 
 \Slim\Slim::registerAutoloader();
 Twig_Autoloader::register();
