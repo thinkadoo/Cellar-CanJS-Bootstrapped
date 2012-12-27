@@ -8,35 +8,35 @@
 
 function getWines() {
     global $app;
-    $wine = new WineController($app);
-    $wine->getWines();
+    $controller = new WineController($app);
+    $controller->getWines();
 }
 function getWine($id) {
     global $app;
-    $wine = new WineController($app);
-    $wine->getWine($id);
+    $controller = new WineController($app);
+    $controller->getWine($id);
 }
 
 function addWine() {
     global $app;
-    $wine = new WineController($app);
-    $wine->addWine();
+    $controller = new WineController($app);
+    $controller->addWine();
 }
 
 function updateWine($id) {
     global $app;
-    $wine = new WineController($app);
-    $wine->updateWine($id);
+    $controller = new WineController($app);
+    $controller->updateWine($id);
 }
 
 function deleteWine($id) {
     global $app;
-    $wine = new WineController($app);
-    $wine->deleteWine($id);
+    $controller = new WineController($app);
+    $controller->deleteWine($id);
 }
 
 function findByName($query) {
     global $app;
-    $wine = new WineController($app);
-    $wine->findByName($query);
+    $controller = new WineController($app);
+    $controller->findByName($query);
 }

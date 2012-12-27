@@ -8,36 +8,36 @@
 
 function welcome() {
     global $twig;
-    $views = new Views($twig);
-    $views->welcome();
+    $view = new Views($twig);
+    $view->welcome();
 }
 
 function data() {
     global $twig;
-    $views = new Views($twig);
-    $views->data();
+    $view = new Views($twig);
+    $view->data();
 }
 
 function services() {
     global $twig;
-    $views = new Views($twig);
-    $views->services();
+    $view = new Views($twig);
+    $view->services();
 }
 
 function downloads() {
     global $twig;
-    $views = new Views($twig);
-    $views->downloads();
+    $view = new Views($twig);
+    $view->downloads();
 }
 
 function about() {
     global $twig;
-    $views = new Views($twig);
-    $views->about();
+    $view = new Views($twig);
+    $view->about();
 }
 
 function contact() {
     global $twig;
-    $views = new Views($twig);
-    $views->contact();
+    $view = new Views($twig);
+    $view->contact();
 }
