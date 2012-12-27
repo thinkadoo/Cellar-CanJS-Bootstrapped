@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/application.js" afterPath="$PROJECT_DIR$/js/application.js" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
@@ -26,7 +25,7 @@
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="74" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+            <state line="24" column="30" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -35,7 +34,7 @@
       <file leaf-file-name="cellar.sql" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cellar.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936">
+            <state line="28" column="0" selection-start="0" selection-end="3942" vertical-scroll-proportion="0.41297936">
               <folding />
             </state>
           </provider>
@@ -343,14 +342,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="74" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+        <state line="24" column="30" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cellar.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936">
+        <state line="28" column="0" selection-start="0" selection-end="3942" vertical-scroll-proportion="0.41297936">
           <folding />
         </state>
       </provider>

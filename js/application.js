@@ -22,18 +22,19 @@
                     return indx;
                 } else {
                     indx = id;
-                    Wine.findOne({'id': indx}).then(function(oneResponse){
-                        if (typeof oneResponse === "undefined"){
-                            id++ ;
-                            indx = undefined;
-                            return findIndex(indx,id);
-                        }else{
-                            that.indx = oneResponse.id
-                            that.wine = oneResponse;
-                            that.renderDetails();
-                        }
-                    });
-                    return findIndex(indx,id);
+                    if( id<10 ){
+                        Wine.findOne({'id': indx}).then(function(oneResponse){
+                            if (typeof oneResponse === "undefined"){
+                                id++ ;
+                                indx = undefined;
+                                return findIndex(indx,id);
+                            }else{
+                                that.indx = oneResponse.id
+                                that.wine = oneResponse;
+                                that.renderDetails();
+                            }
+                        });
+                    }
                 }
             }
             findIndex(undefined,1);
