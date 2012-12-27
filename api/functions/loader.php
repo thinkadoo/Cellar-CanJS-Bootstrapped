@@ -10,7 +10,9 @@
 
 require_once 'functions/api.php';
 require_once 'functions/views.php';
-require_once 'lib/Wine.php';
+require_once 'controllers/WineController.php' ;
+require_once 'models/WineModel.php';
+require_once 'views/Views.php';
 require_once 'lib/Utilities.php';
 
 \Slim\Slim::registerAutoloader();

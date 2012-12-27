@@ -8,7 +8,7 @@
 
 require 'lib/Database.php';
 
-class Wine
+class WineModel
 {
 
     var $dbo;

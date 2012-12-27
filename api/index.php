@@ -40,6 +40,8 @@ $app = new \Slim\Slim();
 
 require_once 'functions/loader.php';
 
+$twig = loadTwig();
+
 // VIEWS //
 
 $app->get('/', 'welcome');
