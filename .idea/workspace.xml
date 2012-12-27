@@ -22,19 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="30" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cellar.sql" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cellar.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="0" selection-end="3942" vertical-scroll-proportion="0.41297936">
+            <state line="24" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.34951457">
               <folding />
             </state>
           </provider>
@@ -340,16 +331,16 @@
         <state line="12" column="21" selection-start="533" selection-end="533" vertical-scroll-proportion="0.07554672" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/application.js">
+    <entry file="file://$PROJECT_DIR$/cellar.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+        <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cellar.sql">
+    <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="0" selection-end="3942" vertical-scroll-proportion="0.41297936">
+        <state line="24" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.34951457">
           <folding />
         </state>
       </provider>

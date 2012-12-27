@@ -22,7 +22,7 @@
                     return indx;
                 } else {
                     indx = id;
-                    if( id<10 ){
+                    if( indx<10 ){
                         Wine.findOne({'id': indx}).then(function(oneResponse){
                             if (typeof oneResponse === "undefined"){
                                 id++ ;
