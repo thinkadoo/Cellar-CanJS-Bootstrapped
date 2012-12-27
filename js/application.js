@@ -1,6 +1,7 @@
 (function () {
+    "use strict";
 
-    Wine = can.Model({
+    var Wine = can.Model({
 
         findAll : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines',
         findOne : 'GET //localhost/Cellar-CanJS-Bootstrapped/api/index.php/wines/{id}',
@@ -10,7 +11,7 @@
 
     }, {});
 
-    Wines = can.Control({
+    var Wines = can.Control({
 
         init: function(){
             this.wine = new Wine();
@@ -75,7 +76,7 @@
 
         createWine: function() {
             var form = this.element.find('form');
-            values = can.deparam(form.serialize());
+            var values = can.deparam(form.serialize());
             this.wine = new Wine();
             this.wine.attr(values);
             this.wine.attr('picture','generic.jpg');
@@ -86,7 +87,7 @@
 
         updateWine: function(){
             var form = this.element.find('form');
-            values = can.deparam(form.serialize());
+            var values = can.deparam(form.serialize());
             this.wine.attr(values).save();
         },
 
