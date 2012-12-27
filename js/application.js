@@ -17,12 +17,26 @@
                 wines:this.options.wines
             }));
             var that = this;
-            var index = 1;
-            Wine.findOne({'id': index}).then(function(oneResponse){
-                    that.wine = oneResponse;
-                    that.renderDetails();
+            var findIndex = function(indx,id) {
+                if (typeof indx === "number") {
+                    return indx;
+                } else {
+                    indx = id;
+                    Wine.findOne({'id': indx}).then(function(oneResponse){
+                        if (typeof oneResponse === "undefined"){
+                            id++ ;
+                            indx = undefined;
+                            return findIndex(indx,id);
+                        }else{
+                            that.indx = oneResponse.id
+                            that.wine = oneResponse;
+                            that.renderDetails();
+                        }
+                    });
+                    return findIndex(indx,id);
                 }
-            )
+            }
+            findIndex(undefined,1);
         },
 
         selectWine: function(el){
