@@ -3,14 +3,14 @@
     <div class="well sidebar-nav">
 
         <ul class="nav nav-list">
-          <% wines.attr('length');
-             wines.each(function(wine){ %>
-                <li <%= (el)-> el.data('wine', wine) %>>
-                     <%== can.view.render('views/wineItem.ejs', {
-                       wine: wine
-                     }) %>
-                </li>
-          <% }) %>
+            <% wines.attr('length');
+            wines.each(function(wine){ %>
+            <li <%= (el)-> el.data('wine', wine) %>>
+            <%== can.view.render('views/wineItem.ejs', {
+            wine: wine
+            }) %>
+            </li>
+            <% }) %>
         </ul>
 
     </div><!--/sidebar-->
@@ -19,46 +19,46 @@
 
 <div class="span9" >
 
-<form id="wineForm">
+    <form id="wineForm">
 
-<!--<div class="row-fluid">-->
-    <div class="span4">
-        <div class="mainArea">
+        <!--<div class="row-fluid">-->
+        <div class="span4">
+            <div class="mainArea">
 
-            <label>Id:</label>
-            <input id="wineId" name="id" type="text" disabled />
+                <label>Id:</label>
+                <input id="wineId" name="id" type="text" disabled />
 
-            <label>Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label>Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label>Grapes:</label>
-            <input type="text" id="grapes" name="grapes"/>
+                <label>Grapes:</label>
+                <input type="text" id="grapes" name="grapes"/>
 
-            <label>Country:</label>
-            <input type="text" id="country" name="country"/>
+                <label>Country:</label>
+                <input type="text" id="country" name="country"/>
 
-            <label>Region:</label>
-            <input type="text" id="region" name="region"/>
+                <label>Region:</label>
+                <input type="text" id="region" name="region"/>
 
-            <label>Year:</label>
-            <input type="text" id="year" name="year"/>
+                <label>Year:</label>
+                <input type="text" id="year" name="year"/>
 
-        </div><!--/mainArea-->
-    </div><!--/span-->
+            </div><!--/mainArea-->
+        </div><!--/span-->
 
-    <div class="span5">
-        <div id="pic"></div>
-        <label>Notes:</label>
-        <a href="javascript://" class="btn btn-primary new">New</a>
-        <a href="javascript://" class="btn btn-primary save">Save</a>
-        <a href="javascript://" class="btn btn-primary update">Update</a>
-        <a href="javascript://" class="btn btn-primary remove">Delete</a>
-        <br>
-        <textarea id="description" name="description" ></textarea>
-    </div><!--/span6-->
+        <div class="span5">
+            <img id="pic" height="300"/>
+            <label>Notes:</label>
+            <a href="javascript://" class="btn btn-primary new">New</a>
+            <a href="javascript://" class="btn btn-primary save">Save</a>
+            <a href="javascript://" class="btn btn-primary update">Update</a>
+            <a href="javascript://" class="btn btn-primary remove">Delete</a>
+            <br>
+            <textarea id="description" name="description" ></textarea>
+        </div><!--/span6-->
 
-<!--</div>&lt;!&ndash;/row&ndash;&gt;-->
+        <!--</div>&lt;!&ndash;/row&ndash;&gt;-->
 
-</form>
+    </form>
 
 </div><!--/span8-->
