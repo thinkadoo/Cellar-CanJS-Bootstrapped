@@ -15,9 +15,11 @@
 
         init: function(){
             this.wine = new Wine();
+            this.imageList = [];
             this.element.html(can.view('views/winesList.ejs', {
                 wines:this.options.wines
             }));
+            this.listImagePaths();
             var that = this;
             var findIndex = function(indx,id) {
                 if (typeof indx === "number") {
@@ -33,7 +35,7 @@
                             }else{
                                 that.indx = oneResponse.id
                                 that.wine = oneResponse;
-                                that.renderDetails();
+                                that.renderDetails(oneResponse.id-1);
                             }
                         });
                     }
@@ -42,24 +44,32 @@
             findIndex(undefined,1);
         },
 
+        listImagePaths: function(){
+            for(var x=0;x<this.options.wines.length;x++) {
+                this.imageList[x] = new Image();
+                this.imageList[x].src = ('pics/' + this.options.wines[x].picture);
+            }
+        },
+
         selectWine: function(el){
             var that = this;
             var index = $("a",el).attr("id");
             Wine.findOne({'id': index}).then(function(oneResponse){
                     that.wine = oneResponse;
-                    that.renderDetails();
+                    that.renderDetails(index-1);
                 }
             )
         },
 
-        renderDetails: function() {
+        renderDetails: function(index) {
+            var image = this.imageList[index];
             $('#wineId').val(this.wine.id);
             $('#name').val(this.wine.name);
             $('#grapes').val(this.wine.grapes);
             $('#country').val(this.wine.country);
             $('#region').val(this.wine.region);
             $('#year').val(this.wine.year);
-            $('#pic').attr('src', 'pics/' + this.wine.picture);
+            $('#pic').html(image);
             $('#description').val(this.wine.description);
         },
 
