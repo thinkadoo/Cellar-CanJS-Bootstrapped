@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
+  <component name="DBNavigator.Module.ConnectionManager">
+    <connections />
+  </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
@@ -7,10 +10,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar:///Applications/MAMP/htdocs/Cellar-CanJS-Bootstrapped/api/composer.phar" />
+          <root url="phar:///var/www/Cellar-CanJS-Bootstrapped/api/composer.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar:///Applications/MAMP/htdocs/Cellar-CanJS-Bootstrapped/api/composer.phar" />
+          <root url="phar:///var/www/Cellar-CanJS-Bootstrapped/api/composer.phar" />
         </SOURCES>
       </library>
     </orderEntry>
