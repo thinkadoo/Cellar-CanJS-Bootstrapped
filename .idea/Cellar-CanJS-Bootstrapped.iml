@@ -10,10 +10,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar:///var/www/Cellar-CanJS-Bootstrapped/api/composer.phar" />
+          <root url="phar:///Applications/MAMP/htdocs/Cellar-CanJS-Bootstrapped/api/composer.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar:///var/www/Cellar-CanJS-Bootstrapped/api/composer.phar" />
+          <root url="phar:///Applications/MAMP/htdocs/Cellar-CanJS-Bootstrapped/api/composer.phar" />
         </SOURCES>
       </library>
     </orderEntry>
