@@ -27,12 +27,12 @@ class Views
 
     public function data() {
         $jdata = $this->wineModel->getWines();
-        $data = json_decode($jdata);
+        $wines = json_decode($jdata);
         $template = $this->twig->loadTemplate('data.html');
         $navigation = $this->getMenuData();
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[1] = array('href' => './data', 'caption' => 'Data', 'class'=>'active');
-        $buffer = $template->render(array('wines' => $data, 'navigation'=>$navigation));
+        $buffer = $template->render(array('wines' => $wines, 'navigation'=>$navigation));
         echo $buffer;
     }
 
