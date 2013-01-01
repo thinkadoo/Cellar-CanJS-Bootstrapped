@@ -18,21 +18,6 @@ class WineModel
 
     }
 
-    public function getWinesArray() {
-
-        $sql = "select * FROM wine ORDER BY id";
-        try {
-            $db = $this->dbo->getConnection();
-            $stmt = $db->query($sql);
-            $wines = $stmt->fetchAll(PDO::FETCH_OBJ);
-            $db = null;
-            return (array)$wines;
-        } catch(PDOException $e) {
-            return "error";
-        }
-
-    }
-
     public function getWines() {
 
         $sql = "select * FROM wine ORDER BY id";

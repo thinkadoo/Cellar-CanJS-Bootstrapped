@@ -26,26 +26,13 @@ class Views
     }
 
     public function data() {
-        $data = $this->wineModel->getWinesArray();
-        $wines = array();
-        $item = array();
-        foreach($data as $wine){
-            $item   ['id'] = $wine->id;
-            $item   ['name'] = $wine->name;
-            $item   ['year'] = $wine->year;
-            $item   ['grapes'] = $wine->grapes;
-            $item   ['country'] = $wine->country;
-            $item   ['region'] = $wine->region;
-            $item   ['description'] = $wine->description;
-            $item   ['picture'] = $wine->picture;
-            $wines [] = $item;
-            $item = null;
-        }
+        $jdata = $this->wineModel->getWines();
+        $data = json_decode($jdata);
         $template = $this->twig->loadTemplate('data.html');
         $navigation = $this->getMenuData();
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[1] = array('href' => './data', 'caption' => 'Data', 'class'=>'active');
-        $buffer = $template->render(array('wines' => $wines, 'navigation'=>$navigation));
+        $buffer = $template->render(array('wines' => $data, 'navigation'=>$navigation));
         echo $buffer;
     }
 
