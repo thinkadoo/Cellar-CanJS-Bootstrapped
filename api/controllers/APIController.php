@@ -6,7 +6,7 @@
  * Time: 12:34 PM
  */
 
-class WineController
+class APIController
 {
 
     var $wineModel;
