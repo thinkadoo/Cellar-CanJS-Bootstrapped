@@ -6,8 +6,9 @@
  * Time: 1:18 PM
  */
 
-class Views
+class ViewsController
 {
+
     var $twig;
     var $wineModel;
 
