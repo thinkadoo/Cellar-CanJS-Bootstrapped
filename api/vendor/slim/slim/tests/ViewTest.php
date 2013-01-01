@@ -114,41 +114,41 @@ class ViewTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test View views directory
+     * Test View templates directory
      *
      * Pre-conditions:
-     * View views directory is set to an existing directory
+     * View templates directory is set to an existing directory
      *
      * Post-conditions:
-     * The views directory is set correctly.
+     * The templates directory is set correctly.
      */
     public function testSetsTemplatesDirectory()
     {
-        $templatesDirectory = dirname(__FILE__) . '/views';
+        $templatesDirectory = dirname(__FILE__) . '/templates';
         $this->view->setTemplatesDirectory($templatesDirectory);
         $this->assertEquals($templatesDirectory, $this->view->getTemplatesDirectory());
     }
 
     /**
-     * Test View views directory may have a trailing slash when set
+     * Test View templates directory may have a trailing slash when set
      *
      * Pre-conditions:
-     * View views directory is set to an existing directory with a trailing slash
+     * View templates directory is set to an existing directory with a trailing slash
      *
      * Post-conditions:
-     * The View views directory is set correctly without a trailing slash
+     * The View templates directory is set correctly without a trailing slash
      */
     public function testTemplatesDirectoryWithTrailingSlash()
     {
-        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/views/');
-        $this->assertEquals(dirname(__FILE__) . '/views', $this->view->getTemplatesDirectory());
+        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/templates/');
+        $this->assertEquals(dirname(__FILE__) . '/templates', $this->view->getTemplatesDirectory());
     }
 
     /**
      * Test View renders template
      *
      * Pre-conditions:
-     * View views directory is set to an existing directory.
+     * View templates directory is set to an existing directory.
      * View data is set without errors
      * Case A: View renders an existing template
      * Case B: View renders a non-existing template
@@ -159,7 +159,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
      */
     public function testRendersTemplateWithData()
     {
-        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/views');
+        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/templates');
         $this->view->setData(array('foo' => 'bar'));
 
         //Case A
@@ -177,7 +177,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
      * Test View displays template
      *
      * Pre-conditions:
-     * View views directory is set to an existing directory.
+     * View templates directory is set to an existing directory.
      * View data is set without errors
      * View is displayed
      *
@@ -187,7 +187,7 @@ class ViewTest extends PHPUnit_Framework_TestCase
     public function testDisplaysTemplateWithData()
     {
         $this->expectOutputString('test output bar');
-        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/views');
+        $this->view->setTemplatesDirectory(dirname(__FILE__) . '/templates');
         $this->view->setData(array('foo' => 'bar'));
         $this->view->display('test.php');
     }

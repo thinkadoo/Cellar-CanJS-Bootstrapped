@@ -252,7 +252,7 @@ class Slim
             'log.level' => \Slim\Log::DEBUG,
             'log.enabled' => true,
             // View
-            'views.path' => './views',
+            'templates.path' => './templates',
             'view' => '\Slim\View',
             // Cookies
             'cookies.lifetime' => '20 minutes',
@@ -640,7 +640,7 @@ class Slim
                 $this->view = new $viewClass();
             }
             $this->view->appendData($existingData);
-            $this->view->setTemplatesDirectory($this->config('views.path'));
+            $this->view->setTemplatesDirectory($this->config('templates.path'));
         }
 
         return $this->view;
@@ -667,7 +667,7 @@ class Slim
         if (!is_null($status)) {
             $this->response->status($status);
         }
-        $this->view->setTemplatesDirectory($this->config('views.path'));
+        $this->view->setTemplatesDirectory($this->config('templates.path'));
         $this->view->appendData($data);
         $this->view->display($template);
     }

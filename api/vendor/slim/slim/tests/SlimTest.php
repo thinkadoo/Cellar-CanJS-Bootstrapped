@@ -160,7 +160,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
     public function testGetSettingThatExists()
     {
         $s = new \Slim\Slim();
-        $this->assertEquals('./views', $s->config('views.path'));
+        $this->assertEquals('./templates', $s->config('templates.path'));
     }
 
     /**
@@ -178,9 +178,9 @@ class SlimTest extends PHPUnit_Framework_TestCase
     public function testSetSetting()
     {
         $s = new \Slim\Slim();
-        $this->assertEquals('./views', $s->config('views.path'));
-        $s->config('views.path', './tmpl');
-        $this->assertEquals('./tmpl', $s->config('views.path'));
+        $this->assertEquals('./templates', $s->config('templates.path'));
+        $s->config('templates.path', './tmpl');
+        $this->assertEquals('./tmpl', $s->config('templates.path'));
     }
 
     /**
@@ -189,13 +189,13 @@ class SlimTest extends PHPUnit_Framework_TestCase
     public function testBatchSetSettings()
     {
         $s = new \Slim\Slim();
-        $this->assertEquals('./views', $s->config('views.path'));
+        $this->assertEquals('./templates', $s->config('templates.path'));
         $this->assertTrue($s->config('debug'));
         $s->config(array(
-            'views.path' => './tmpl',
+            'templates.path' => './tmpl',
             'debug' => false
         ));
-        $this->assertEquals('./tmpl', $s->config('views.path'));
+        $this->assertEquals('./tmpl', $s->config('templates.path'));
         $this->assertFalse($s->config('debug'));
     }
 
@@ -490,7 +490,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
      */
     public function testRenderTemplateWithData()
     {
-        $s = new \Slim\Slim(array('views.path' => dirname(__FILE__) . '/views'));
+        $s = new \Slim\Slim(array('templates.path' => dirname(__FILE__) . '/templates'));
         $s->get('/bar', function () use ($s) {
             $s->render('test.php', array('foo' => 'bar'));
         });
@@ -505,7 +505,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
      */
     public function testRenderTemplateWithDataAndStatus()
     {
-        $s = new \Slim\Slim(array('views.path' => dirname(__FILE__) . '/views'));
+        $s = new \Slim\Slim(array('templates.path' => dirname(__FILE__) . '/templates'));
         $s->get('/bar', function () use ($s) {
             $s->render('test.php', array('foo' => 'bar'), 500);
         });

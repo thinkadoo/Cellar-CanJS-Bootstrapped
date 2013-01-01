@@ -53,19 +53,19 @@ class Twig_Environment
      *  * debug: When set to true, it automatically set "auto_reload" to true as
      *           well (default to false).
      *
-     *  * charset: The charset used by the views (default to utf-8).
+     *  * charset: The charset used by the templates (default to utf-8).
      *
      *  * base_template_class: The base template class to use for generated
-     *                         views (default to Twig_Template).
+     *                         templates (default to Twig_Template).
      *
-     *  * cache: An absolute path where to store the compiled views, or
+     *  * cache: An absolute path where to store the compiled templates, or
      *           false to disable compilation cache (default).
      *
      *  * auto_reload: Whether to reload the template is the original source changed.
      *                 If you don't provide the auto_reload option, it will be
      *                 determined automatically base on the debug value.
      *
-     *  * strict_variables: Whether to ignore invalid variables in views
+     *  * strict_variables: Whether to ignore invalid variables in templates
      *                      (default to false).
      *
      *  * autoescape: Whether to enable auto-escaping (default to html):
@@ -123,7 +123,7 @@ class Twig_Environment
     }
 
     /**
-     * Gets the base template class for compiled views.
+     * Gets the base template class for compiled templates.
      *
      * @return string The base template class name
      */
@@ -133,7 +133,7 @@ class Twig_Environment
     }
 
     /**
-     * Sets the base template class for compiled views.
+     * Sets the base template class for compiled templates.
      *
      * @param string $class The base template class name
      */
@@ -233,7 +233,7 @@ class Twig_Environment
      /**
       * Sets the cache directory or false if cache is disabled.
       *
-      * @param string|false $cache The absolute path to the compiled views,
+      * @param string|false $cache The absolute path to the compiled templates,
       *                            or false to disable cache
       */
     public function setCache($cache)
@@ -386,7 +386,7 @@ class Twig_Environment
             throw $e;
         }
 
-        throw new Twig_Error_Loader(sprintf('Unable to find one of the following views: "%s".', implode('", "', $names)));
+        throw new Twig_Error_Loader(sprintf('Unable to find one of the following templates: "%s".', implode('", "', $names)));
     }
 
     /**

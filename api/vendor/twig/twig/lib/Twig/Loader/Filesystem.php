@@ -23,7 +23,7 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     /**
      * Constructor.
      *
-     * @param string|array $paths A path or an array of paths where to look for views
+     * @param string|array $paths A path or an array of paths where to look for templates
      */
     public function __construct($paths)
     {
@@ -31,11 +31,11 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     }
 
     /**
-     * Returns the paths to the views.
+     * Returns the paths to the templates.
      *
      * @param string $namespace A path namespace
      *
-     * @return array The array of paths where to look for views
+     * @return array The array of paths where to look for templates
      */
     public function getPaths($namespace = '__main__')
     {
@@ -55,9 +55,9 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     }
 
     /**
-     * Sets the paths where views are stored.
+     * Sets the paths where templates are stored.
      *
-     * @param string|array $paths     A path or an array of paths where to look for views
+     * @param string|array $paths     A path or an array of paths where to look for templates
      * @param string       $namespace A path namespace
      */
     public function setPaths($paths, $namespace = '__main__')
@@ -73,9 +73,9 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     }
 
     /**
-     * Adds a path where views are stored.
+     * Adds a path where templates are stored.
      *
-     * @param string $path      A path where to look for views
+     * @param string $path      A path where to look for templates
      * @param string $namespace A path name
      *
      * @throws Twig_Error_Loader
@@ -93,9 +93,9 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     }
 
     /**
-     * Prepends a path where views are stored.
+     * Prepends a path where templates are stored.
      *
-     * @param string $path      A path where to look for views
+     * @param string $path      A path where to look for templates
      * @param string $namespace A path name
      *
      * @throws Twig_Error_Loader
