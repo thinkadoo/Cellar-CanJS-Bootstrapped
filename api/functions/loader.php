@@ -10,9 +10,9 @@
 
 require_once 'functions/api.php';
 require_once 'functions/views.php';
-require_once 'controllers/WineController.php' ;
+require_once 'controllers/WineController.php';
+require_once 'controllers/ViewsController.php';
 require_once 'models/WineModel.php';
-require_once 'views/Views.php';
 require_once 'lib/Utilities.php';
 require_once 'lib/Database.php';
 
@@ -20,7 +20,7 @@ require_once 'lib/Database.php';
 Twig_Autoloader::register();
 
 function loadTwig(){
-    $loader = new Twig_Loader_Filesystem('templates');
+    $loader = new Twig_Loader_Filesystem('views');
     $twig = new Twig_Environment($loader, array(
         'cache' => false,
         'debug' => true
@@ -29,10 +29,5 @@ function loadTwig(){
 }
 
 $app->hook('slim.before.dispatch', function () use ($app) {
-    //print_r($app->request()->getRootUri());
-    //print_r($app->request()->getResourceUri());
-    //print_r($app->request()->cookies());
-    //print_r($app->request()->getUserAgent());
-    //print_r($app->request()->getIp());
-    //print_r($app->request()->isAjax());
+
 });

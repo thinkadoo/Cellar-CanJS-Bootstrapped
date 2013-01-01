@@ -10,7 +10,7 @@
  */
 
 /**
- * Loads templates from other loaders.
+ * Loads views from other loaders.
  *
  * @package twig
  * @author  Fabien Potencier <fabien@symfony.com>

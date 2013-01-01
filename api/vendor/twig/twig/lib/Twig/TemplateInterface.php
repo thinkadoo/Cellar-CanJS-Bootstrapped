@@ -10,7 +10,7 @@
  */
 
 /**
- * Interface implemented by all compiled templates.
+ * Interface implemented by all compiled views.
  *
  * @package twig
  * @author  Fabien Potencier <fabien@symfony.com>
