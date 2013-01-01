@@ -1570,7 +1570,7 @@
 			// later.  
       paramReplacer.lastIndex = 0;
 			if ( options || ! paramReplacer.test( methodName )) {
-				// If we have options, run sub to replace templates `{}` with a
+				// If we have options, run sub to replace views `{}` with a
 				// value from the options or the window
 				var convertedName = options ? can.sub(methodName, [options, window]) : methodName,
 					

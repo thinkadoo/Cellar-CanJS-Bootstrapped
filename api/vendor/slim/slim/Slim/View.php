@@ -63,7 +63,7 @@ class View
     protected $data = array();
 
     /**
-     * @var string Absolute or relative path to the application's templates directory
+     * @var string Absolute or relative path to the application's views directory
      */
     protected $templatesDirectory;
 
@@ -136,9 +136,9 @@ class View
     }
 
     /**
-     * Get templates directory
-     * @return string|null     Path to templates directory without trailing slash;
-     *                         Returns null if templates directory not set;
+     * Get views directory
+     * @return string|null     Path to views directory without trailing slash;
+     *                         Returns null if views directory not set;
      */
     public function getTemplatesDirectory()
     {
@@ -146,7 +146,7 @@ class View
     }
 
     /**
-     * Set templates directory
+     * Set views directory
      * @param  string   $dir
      */
     public function setTemplatesDirectory($dir)
@@ -175,7 +175,7 @@ class View
      *
      * This method echoes the rendered template to the current output buffer
      *
-     * @param  string   $template   Pathname of template file relative to templates directoy
+     * @param  string   $template   Pathname of template file relative to views directoy
      */
     public function display($template)
     {
@@ -187,7 +187,7 @@ class View
      *
      * This method returns the rendered template
      *
-     * @param  string $template Pathname of template file relative to templates directory
+     * @param  string $template Pathname of template file relative to views directory
      * @return string
      */
     public function fetch($template)
@@ -198,7 +198,7 @@ class View
     /**
      * Render template
      *
-     * @param  string   $template   Pathname of template file relative to templates directory
+     * @param  string   $template   Pathname of template file relative to views directory
      * @return string
      *
      * DEPRECATION WARNING!
