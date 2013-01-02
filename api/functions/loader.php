@@ -27,7 +27,3 @@ function loadTwig(){
     ));
     return $twig;
 }
-
-$app->hook('slim.before.dispatch', function () use ($app) {
-
-});
