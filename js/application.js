@@ -28,7 +28,7 @@
                     indx = id;
                     if( indx<10 ){
                         Wine.findOne({'id': indx}).then(function(findOneResponse){
-                            if (typeof oneResponse === "undefined"){
+                            if (typeof findOneResponse === "undefined"){
                                 id++ ;
                                 indx = undefined;
                                 return findIndex(indx,id);
@@ -98,16 +98,7 @@
         },
 
         deleteWine: function(){
-            wineDetails.attr({
-                "id":"",
-                "name":"",
-                "grapes":"",
-                "country":"",
-                "region":"",
-                "year":"",
-                "picture": 'pics/generic.jpg',
-                "description":""
-            },true);
+            this.newWine();
             this.wine.destroy();
         },
 
