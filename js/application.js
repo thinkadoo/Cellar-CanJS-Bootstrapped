@@ -11,12 +11,14 @@
 
     }, {});
 
+    var wineDetails = new can.Observe({});
+
     var Wines = can.Control({
 
         init: function(){
-            this.wine = new Wine();
             this.element.html(can.view('views/winesList.ejs', {
-                wines:this.options.wines
+                wines:this.options.wines,
+                wineDetails: wineDetails
             }));
             var that = this;
             var findIndex = function(indx,id) {
@@ -33,7 +35,7 @@
                             }else{
                                 that.indx = oneResponse.id
                                 that.wine = oneResponse;
-                                that.renderDetails();
+                                that.updateWineDetailsObserver(oneResponse);
                             }
                         });
                     }
@@ -47,31 +49,35 @@
             var index = $("a",el).attr("id");
             Wine.findOne({'id': index}).then(function(oneResponse){
                     that.wine = oneResponse;
-                    that.renderDetails();
+                    that.updateWineDetailsObserver(oneResponse);
                 }
             )
         },
 
-        renderDetails: function() {
-            $('#wineId').val(this.wine.id);
-            $('#name').val(this.wine.name);
-            $('#grapes').val(this.wine.grapes);
-            $('#country').val(this.wine.country);
-            $('#region').val(this.wine.region);
-            $('#year').val(this.wine.year);
-            $('#pic').attr('src', 'pics/' + this.wine.picture);
-            $('#description').val(this.wine.description);
+        updateWineDetailsObserver: function(data){
+            wineDetails.attr({
+                "id":data.id,
+                "name":data.name,
+                "grapes":data.grapes,
+                "country":data.country,
+                "region":data.region,
+                "year":data.year,
+                "picture": 'pics/' + data.picture,
+                "description":data.description
+            },true);
         },
 
-        newWine: function() {
-            $('#wineId').val('');
-            $('#name').val('');
-            $('#grapes').val('');
-            $('#country').val('');
-            $('#region').val('');
-            $('#year').val('');
-            $('#pic').attr('src', 'pics/generic.jpg');
-            $('#description').val('');
+        newWine: function(){
+            wineDetails.attr({
+                "id":"",
+                "name":"",
+                "grapes":"",
+                "country":"",
+                "region":"",
+                "year":"",
+                "picture": 'pics/generic.jpg',
+                "description":""
+            },true);
         },
 
         createWine: function() {
@@ -92,7 +98,6 @@
         },
 
         deleteWine: function(){
-            this.wine.destroy();
             this.newWine();
         },
 
