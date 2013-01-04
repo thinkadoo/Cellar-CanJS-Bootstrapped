@@ -5,7 +5,7 @@
         <ul class="nav nav-list">
             <% wines.attr('length');
             wines.each(function(wine){ %>
-            <li <%= (el)-> el.data('wine', wine) %>>
+            <li <%= (el)-> el.data('wine', wine) %> >
             <%== can.view.render('views/wineItem.ejs', {
             wine: wine
             }) %>
@@ -21,7 +21,6 @@
 
     <form id="wineForm">
 
-        <!--<div class="row-fluid">-->
         <div class="span4">
             <div class="mainArea">
 
@@ -44,7 +43,7 @@
                 <input type="text" id="year" name="year" value="<%= wineDetails.attr('year');%>"/>
 
             </div><!--/mainArea-->
-        </div><!--/span-->
+        </div><!--/span4-->
 
         <div class="span5">
             <img src="<%= wineDetails.attr('picture');%>" id="pic" height="300"/>
@@ -54,11 +53,9 @@
             <a href="javascript://" class="btn btn-primary update">Update</a>
             <a href="javascript://" class="btn btn-primary remove">Delete</a>
             <br>
-            <textarea id="description" name="description"><%= wineDetails.attr('description');%></textarea>
-        </div><!--/span6-->
-
-        <!--</div>&lt;!&ndash;/row&ndash;&gt;-->
+            <textarea id="description" name="description"><%== wineDetails.attr('description');%></textarea>
+        </div><!--/span5-->
 
     </form>
 
-</div><!--/span8-->
+</div><!--/span9-->

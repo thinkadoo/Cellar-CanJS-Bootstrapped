@@ -62,7 +62,7 @@
                 "country":data.country,
                 "region":data.region,
                 "year":data.year,
-                "picture": 'pics/' + data.picture,
+                "picture": "pics/" + data.picture,
                 "description":data.description
             },true);
         },
@@ -75,7 +75,7 @@
                 "country":"",
                 "region":"",
                 "year":"",
-                "picture": 'pics/generic.jpg',
+                "picture": "pics/generic.jpg",
                 "description":""
             },true);
         },
