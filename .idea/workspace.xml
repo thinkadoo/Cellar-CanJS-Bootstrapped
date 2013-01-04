@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/about.php" afterPath="$PROJECT_DIR$/mobi/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/contact.php" afterPath="$PROJECT_DIR$/mobi/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/index.php" afterPath="$PROJECT_DIR$/mobi/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/header.php" afterPath="$PROJECT_DIR$/mobi/header.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="about.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobi/about.php">
+      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobi/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="0.029821074">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobi/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="-1.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobi/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="36" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-10.0">
+            <state line="4" column="22" selection-start="89" selection-end="89" vertical-scroll-proportion="0.059642147">
               <folding />
             </state>
           </provider>
@@ -74,12 +54,12 @@
         <option value="$PROJECT_DIR$/views/winesList.ejs" />
         <option value="$PROJECT_DIR$/mobi/footer.php" />
         <option value="$PROJECT_DIR$/mobi/js/application.js" />
-        <option value="$PROJECT_DIR$/mobi/header.php" />
         <option value="$PROJECT_DIR$/mobi/css/application.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/mobi/index.php" />
         <option value="$PROJECT_DIR$/mobi/contact.php" />
         <option value="$PROJECT_DIR$/mobi/about.php" />
+        <option value="$PROJECT_DIR$/mobi/header.php" />
       </list>
     </option>
   </component>
@@ -369,20 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="0.1640159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="36" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobi/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="-1.25">
@@ -393,6 +359,20 @@
     <entry file="file://$PROJECT_DIR$/mobi/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="0.029821074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="36" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.24169184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="89" selection-end="89" vertical-scroll-proportion="0.059642147">
           <folding />
         </state>
       </provider>
