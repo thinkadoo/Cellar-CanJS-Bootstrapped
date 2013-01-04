@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/application.js" afterPath="$PROJECT_DIR$/js/application.js" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
@@ -25,7 +26,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="31" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.47572815">
+            <state line="79" column="20" selection-start="2820" selection-end="2820" vertical-scroll-proportion="0.067961164">
               <folding />
             </state>
           </provider>
@@ -334,11 +335,6 @@
         <state line="19" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="0.20874752" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cellar.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="19" selection-start="121" selection-end="121" vertical-scroll-proportion="0.014285714">
@@ -353,14 +349,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/winesList.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="107" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.815534">
+        <state line="17" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellar.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="0" selection-end="3942" vertical-scroll-proportion="0.41297936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="31" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.47572815">
+        <state line="79" column="20" selection-start="2820" selection-end="2820" vertical-scroll-proportion="0.067961164">
           <folding />
         </state>
       </provider>

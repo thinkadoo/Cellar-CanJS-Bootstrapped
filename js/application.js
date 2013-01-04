@@ -27,15 +27,15 @@
                 } else {
                     indx = id;
                     if( indx<10 ){
-                        Wine.findOne({'id': indx}).then(function(oneResponse){
+                        Wine.findOne({'id': indx}).then(function(findOneResponse){
                             if (typeof oneResponse === "undefined"){
                                 id++ ;
                                 indx = undefined;
                                 return findIndex(indx,id);
                             }else{
-                                that.indx = oneResponse.id
-                                that.wine = oneResponse;
-                                that.updateWineDetailsObserver(oneResponse);
+                                that.indx = findOneResponse.id
+                                that.wine = findOneResponse;
+                                that.updateWineDetailsObserver(findOneResponse);
                             }
                         });
                     }
@@ -47,9 +47,9 @@
         selectWine: function(el){
             var that = this;
             var index = $("a",el).attr("id");
-            Wine.findOne({'id': index}).then(function(oneResponse){
-                    that.wine = oneResponse;
-                    that.updateWineDetailsObserver(oneResponse);
+            Wine.findOne({'id': index}).then(function(findOneResponse){
+                    that.wine = findOneResponse;
+                    that.updateWineDetailsObserver(findOneResponse);
                 }
             )
         },
@@ -78,7 +78,6 @@
                 "picture": 'pics/generic.jpg',
                 "description":""
             },true);
-            this.wine.destroy();
         },
 
         createWine: function() {
@@ -99,7 +98,17 @@
         },
 
         deleteWine: function(){
-            this.newWine();
+            wineDetails.attr({
+                "id":"",
+                "name":"",
+                "grapes":"",
+                "country":"",
+                "region":"",
+                "year":"",
+                "picture": 'pics/generic.jpg',
+                "description":""
+            },true);
+            this.wine.destroy();
         },
 
         '{document} #wines li click': function(el){
@@ -118,9 +127,9 @@
 
     $(document).ready(function () {
 
-        $.when(Wine.findAll().then(function (wineResponse) {
+        $.when(Wine.findAll().then(function (findAllResponse) {
             new Wines('#wines', {
-                wines:wineResponse
+                wines:findAllResponse
             });
         }));
 
