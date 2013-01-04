@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/about.php" afterPath="$PROJECT_DIR$/mobi/about.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/contact.php" afterPath="$PROJECT_DIR$/mobi/contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/index.php" afterPath="$PROJECT_DIR$/mobi/index.php" />
@@ -25,28 +24,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="about.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobi/about.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="0.029821074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobi/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobi/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="54" selection-start="2083" selection-end="2121" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobi/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="528" selection-end="528" vertical-scroll-proportion="0.17892644">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobi/about.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="50" selection-start="447" selection-end="447" vertical-scroll-proportion="-6.25">
+            <state line="49" column="36" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -79,8 +78,8 @@
         <option value="$PROJECT_DIR$/mobi/css/application.css" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/mobi/index.php" />
-        <option value="$PROJECT_DIR$/mobi/about.php" />
         <option value="$PROJECT_DIR$/mobi/contact.php" />
+        <option value="$PROJECT_DIR$/mobi/about.php" />
       </list>
     </option>
   </component>
@@ -356,16 +355,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="0.1640159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="58" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.79025847">
+        <state line="53" column="8" selection-start="2175" selection-end="2235" vertical-scroll-proportion="0.79025847">
           <folding />
         </state>
       </provider>
@@ -377,23 +369,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/index.php">
+    <entry file="file://$PROJECT_DIR$/mobi/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="54" selection-start="2083" selection-end="2121" vertical-scroll-proportion="-8.75">
+        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="0.1640159">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/about.php">
+    <entry file="file://$PROJECT_DIR$/mobi/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="447" selection-end="447" vertical-scroll-proportion="-6.25">
+        <state line="49" column="36" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobi/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="528" selection-end="528" vertical-scroll-proportion="0.17892644">
+        <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="52" selection-end="52" vertical-scroll-proportion="0.029821074">
           <folding />
         </state>
       </provider>
