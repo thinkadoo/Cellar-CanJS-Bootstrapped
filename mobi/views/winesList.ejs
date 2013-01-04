@@ -1,0 +1,61 @@
+<div class="span3" >
+
+    <div class="well sidebar-nav">
+
+        <ul class="nav nav-list">
+            <% wines.attr('length');
+            wines.each(function(wine){ %>
+            <li <%= (el)-> el.data('wine', wine) %> >
+            <%== can.view.render('views/wineItem.ejs', {
+            wine: wine
+            }) %>
+            </li>
+            <% }) %>
+        </ul>
+
+    </div><!--/sidebar-->
+
+</div><!--/span3-->
+
+<div class="span9" >
+
+    <form id="wineForm">
+
+        <div class="span4">
+            <div class="mainArea">
+
+                <label>Id:</label>
+                <input id="wineId" name="id" type="text" value="<%= wineDetails.attr('id');%>" disabled />
+
+                <label>Name:</label>
+                <input type="text" id="name" name="name" value="<%= wineDetails.attr('name');%>" required>
+
+                <label>Grapes:</label>
+                <input type="text" id="grapes" name="grapes" value="<%= wineDetails.attr('grapes');%>"/>
+
+                <label>Country:</label>
+                <input type="text" id="country" name="country" value="<%= wineDetails.attr('country');%>"/>
+
+                <label>Region:</label>
+                <input type="text" id="region" name="region" value="<%= wineDetails.attr('region');%>"/>
+
+                <label>Year:</label>
+                <input type="text" id="year" name="year" value="<%= wineDetails.attr('year');%>"/>
+
+            </div><!--/mainArea-->
+        </div><!--/span4-->
+
+        <div class="span5">
+            <img src="<%= wineDetails.attr('picture');%>" id="pic" height="300"/>
+            <label>Notes:</label>
+            <a href="javascript://" class="btn btn-primary new">New</a>
+            <a href="javascript://" class="btn btn-primary save">Save</a>
+            <a href="javascript://" class="btn btn-primary update">Update</a>
+            <a href="javascript://" class="btn btn-primary remove">Delete</a>
+            <br>
+            <textarea id="description" name="description"><%== wineDetails.attr('description');%></textarea>
+        </div><!--/span5-->
+
+    </form>
+
+</div><!--/span9-->
