@@ -78,6 +78,7 @@
                 "picture": 'pics/generic.jpg',
                 "description":""
             },true);
+            this.wine.destroy();
         },
 
         createWine: function() {
@@ -105,21 +106,13 @@
             this.selectWine(el);
         },
 
-        '.new click': function(){
-            this.newWine();
-        },
+        '.new click': "newWine",
 
-        '.save click': function(){
-            this.createWine();
-        },
+        '.save click': "createWine",
 
-        '.remove click': function(){
-            this.deleteWine();
-        },
+        '.remove click': "deleteWine",
 
-        '.update click': function() {
-            this.updateWine();
-        }
+        '.update click': "updateWine"
 
     });
 
