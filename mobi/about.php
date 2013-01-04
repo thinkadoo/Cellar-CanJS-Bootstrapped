@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Cellar Mobi</a>
+            <a class="brand" href="../">Cellar</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li><a href="./index.php">Home</a></li>

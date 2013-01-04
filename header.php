@@ -51,6 +51,7 @@
     <div class="jumbotron">
         <h1>Cellar</h1>
         <p class="lead">Cellar is a CanJS MVC App with a RESTful API backend. </p>
+        <a class="btn btn-large btn-primary" href="./mobi/">Mobi</a>
         <a class="btn btn-large btn-primary" href="./api/index.php/">Slim server API</a>
     </div>
 

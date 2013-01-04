@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobi/about.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobi/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/about.php" afterPath="$PROJECT_DIR$/mobi/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/contact.php" afterPath="$PROJECT_DIR$/mobi/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobi/index.php" afterPath="$PROJECT_DIR$/mobi/index.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,19 +25,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobi/header.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobi/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.875">
+            <state line="47" column="54" selection-start="2083" selection-end="2121" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobi/css/application.css">
+      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobi/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="32" selection-start="528" selection-end="528" vertical-scroll-proportion="0.17892644">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobi/about.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="50" selection-start="447" selection-end="447" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -55,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/api/models/WineModel.php" />
         <option value="$PROJECT_DIR$/api/views/Views.php" />
         <option value="$PROJECT_DIR$/api/controllers/ViewsController.php" />
         <option value="$PROJECT_DIR$/api/functions/views.php" />
@@ -66,11 +75,12 @@
         <option value="$PROJECT_DIR$/views/winesList.ejs" />
         <option value="$PROJECT_DIR$/mobi/footer.php" />
         <option value="$PROJECT_DIR$/mobi/js/application.js" />
-        <option value="$PROJECT_DIR$/mobi/index.php" />
-        <option value="$PROJECT_DIR$/mobi/contact.php" />
-        <option value="$PROJECT_DIR$/mobi/about.php" />
         <option value="$PROJECT_DIR$/mobi/header.php" />
         <option value="$PROJECT_DIR$/mobi/css/application.css" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/mobi/index.php" />
+        <option value="$PROJECT_DIR$/mobi/about.php" />
+        <option value="$PROJECT_DIR$/mobi/contact.php" />
       </list>
     </option>
   </component>
@@ -136,88 +146,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,13 +286,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/functions/views.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="31" selection-start="687" selection-end="687" vertical-scroll-proportion="-21.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/functions/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="35" selection-start="774" selection-end="774" vertical-scroll-proportion="-21.25">
@@ -407,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="349" selection-end="405" vertical-scroll-proportion="0.1640159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobi/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="14" selection-start="1015" selection-end="1015" vertical-scroll-proportion="-16.25">
@@ -435,37 +349,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/index.php">
+    <entry file="file://$PROJECT_DIR$/mobi/css/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="40" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="576" selection-end="576" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="576" selection-end="576" vertical-scroll-proportion="0.19383697">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobi/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.875">
+        <state line="11" column="22" selection-start="368" selection-end="368" vertical-scroll-proportion="0.1640159">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobi/css/application.css">
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="58" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.79025847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="54" selection-start="2083" selection-end="2121" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="50" selection-start="447" selection-end="447" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobi/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="528" selection-end="528" vertical-scroll-proportion="0.17892644">
           <folding />
         </state>
       </provider>
