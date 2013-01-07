@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/APIController.php" afterPath="$PROJECT_DIR$/api/controllers/APIController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/ViewsController.php" afterPath="$PROJECT_DIR$/api/controllers/ViewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/WineModel.php" afterPath="$PROJECT_DIR$/api/models/WineModel.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,28 +25,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/lib/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="526" selection-end="541" vertical-scroll-proportion="-13.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WineModel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APIController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1640159">
+            <state line="89" column="49" selection-start="2671" selection-end="2671" vertical-scroll-proportion="-52.5">
               <folding />
             </state>
           </provider>
@@ -52,7 +37,16 @@
       <file leaf-file-name="ViewsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="32" selection-start="1776" selection-end="1776" vertical-scroll-proportion="-27.5">
+            <state line="50" column="45" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-28.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WineModel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="38" selection-start="381" selection-end="381" vertical-scroll-proportion="0.29821074">
               <folding />
             </state>
           </provider>
@@ -81,9 +75,9 @@
         <option value="$PROJECT_DIR$/mobi/header.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/js/application.js" />
         <option value="$PROJECT_DIR$/thinkadoo.php" />
         <option value="$PROJECT_DIR$/api/lib/Database.php" />
+        <option value="$PROJECT_DIR$/js/application.js" />
         <option value="$PROJECT_DIR$/api/models/WineModel.php" />
         <option value="$PROJECT_DIR$/api/controllers/ViewsController.php" />
         <option value="$PROJECT_DIR$/api/controllers/APIController.php" />
@@ -123,7 +117,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,53 +145,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,12 +199,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cellar-CanJS-Bootstrapped" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +288,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23850267" sideWeight="0.99810785" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24385026" sideWeight="0.99810785" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -407,16 +373,6 @@
         <state line="7" column="51" selection-start="187" selection-end="222" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="786" selection-end="802" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/lib/Utilities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/functions/loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -442,42 +398,56 @@
         <state line="37" column="0" selection-start="1638" selection-end="2995" vertical-scroll-proportion="0.06042296" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cellar.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/views/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.4473161">
+        <state line="30" column="0" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.4473161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellar.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.41297936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="82" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.4223301">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="526" selection-end="541" vertical-scroll-proportion="-13.125">
+        <state line="27" column="26" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3280318">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
+    <entry file="file://$PROJECT_DIR$/api/lib/Utilities.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="32" selection-start="1776" selection-end="1776" vertical-scroll-proportion="-27.5">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1640159">
+        <state line="89" column="49" selection-start="2671" selection-end="2671" vertical-scroll-proportion="-52.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="45" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-28.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="381" selection-end="381" vertical-scroll-proportion="0.29821074">
           <folding />
         </state>
       </provider>
