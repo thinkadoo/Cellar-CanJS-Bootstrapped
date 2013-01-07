@@ -15,8 +15,7 @@ class APIController
 
     function __construct($App){
 
-        $wineModel = new WineModel();
-        $this->wineModel = $wineModel;
+        $this->wineModel = new WineModel();
         $utilities = new Utilities();
         $this->utilities = $utilities;
         $this->app = $App;
