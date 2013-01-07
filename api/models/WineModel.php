@@ -12,9 +12,7 @@ class WineModel
     var $dbo;
 
     function __construct(){
-
         $this->dbo = new Database();
-
     }
 
     function __destruct(){
