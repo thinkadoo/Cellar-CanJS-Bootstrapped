@@ -13,8 +13,7 @@ class WineModel
 
     function __construct(){
 
-        $dbo = new Database();
-        $this->dbo = $dbo;
+        $this->dbo = new Database();
 
     }
 

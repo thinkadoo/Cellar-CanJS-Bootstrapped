@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/APIController.php" afterPath="$PROJECT_DIR$/api/controllers/APIController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/ViewsController.php" afterPath="$PROJECT_DIR$/api/controllers/ViewsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/models/WineModel.php" afterPath="$PROJECT_DIR$/api/models/WineModel.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
@@ -33,19 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewsController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ViewsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="89" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.4473161">
+            <state line="35" column="89" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-18.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WineModel.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WineModel.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="-10.625">
+            <state line="14" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13419484">
               <folding />
             </state>
           </provider>
@@ -86,9 +84,9 @@
         <option value="$PROJECT_DIR$/thinkadoo.php" />
         <option value="$PROJECT_DIR$/api/lib/Database.php" />
         <option value="$PROJECT_DIR$/js/application.js" />
-        <option value="$PROJECT_DIR$/api/models/WineModel.php" />
         <option value="$PROJECT_DIR$/api/controllers/ViewsController.php" />
         <option value="$PROJECT_DIR$/api/controllers/APIController.php" />
+        <option value="$PROJECT_DIR$/api/models/WineModel.php" />
       </list>
     </option>
   </component>
@@ -451,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="51" selection-start="498" selection-end="498" vertical-scroll-proportion="-13.125">
@@ -467,7 +458,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="89" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.4473161">
+        <state line="35" column="89" selection-start="1131" selection-end="1131" vertical-scroll-proportion="-18.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/WineModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13419484">
           <folding />
         </state>
       </provider>
