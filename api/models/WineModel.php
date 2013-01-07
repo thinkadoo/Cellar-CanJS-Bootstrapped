@@ -33,6 +33,7 @@ class WineModel
             $db = $this->dbo->getConnection();
             $stmt = $db->query($sql);
             $wines = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $this->dbo->closeConnection();
             $db = null;
             return json_encode($wines);
         } catch(PDOException $e) {
@@ -49,6 +50,7 @@ class WineModel
             $stmt->bindParam("id", $id);
             $stmt->execute();
             $wine = $stmt->fetchObject();
+            $this->dbo->closeConnection();
             $db = null;
             return json_encode($wine);
         } catch(PDOException $e) {
@@ -71,6 +73,7 @@ class WineModel
             $stmt->bindParam("picture", $defaultImage);
             $stmt->execute();
             $wine->id = $db->lastInsertId();
+            $this->dbo->closeConnection();
             $db = null;
             return json_encode($wine);
         } catch(PDOException $e) {
@@ -92,6 +95,7 @@ class WineModel
             $stmt->bindParam("description", $wine->description);
             $stmt->bindParam("id", $id);
             $stmt->execute();
+            $this->dbo->closeConnection();
             $db = null;
             return json_encode($wine);
         } catch(PDOException $e) {
@@ -106,6 +110,7 @@ class WineModel
             $stmt = $db->prepare($sql);
             $stmt->bindParam("id", $id);
             $stmt->execute();
+            $this->dbo->closeConnection();
             $db = null;
         } catch(PDOException $e) {
             return '{"error":{"text":'. $e->getMessage() .'}}';
@@ -121,6 +126,7 @@ class WineModel
             $stmt->bindParam("query", $query);
             $stmt->execute();
             $wines = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $this->dbo->closeConnection();
             $db = null;
             return '{"wine": ' . json_encode($wines) . '}';
         } catch(PDOException $e) {
