@@ -24,4 +24,8 @@ class Database
         return $this->dbn;
     }
 
+    public function closeConnection(){
+        $this->dbn = null;
+    }
+
 }

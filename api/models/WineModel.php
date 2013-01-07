@@ -18,6 +18,10 @@ class WineModel
 
     }
 
+    function __destruct(){
+        $this->dbo->closeConnection();
+    }
+
     public function getWines() {
 
         $sql = "select * FROM wine ORDER BY id";
