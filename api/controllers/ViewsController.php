@@ -13,7 +13,6 @@ class ViewsController
     var $wineModel;
 
     function __construct($Twig){
-        $this->wineModel = new WineModel();
         $this->twig = $Twig;
     }
 
@@ -27,6 +26,7 @@ class ViewsController
     }
 
     public function data() {
+        $this->wineModel = new WineModel();
         $jdata = $this->wineModel->getWines();
         $wines = json_decode($jdata);
         $template = $this->twig->loadTemplate('data.html');
@@ -34,10 +34,12 @@ class ViewsController
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[1] = array('href' => './data', 'caption' => 'Data', 'class'=>'active');
         $buffer = $template->render(array('wines' => $wines, 'navigation'=>$navigation));
+        $this->wineModel = null;
         echo $buffer;
     }
 
     public function services() {
+        $this->wineModel = new WineModel();
         $wines = $this->wineModel->getWines();
         $wine = $this->wineModel->getWine(1);
         $template = $this->twig->loadTemplate('services.html');
@@ -45,6 +47,7 @@ class ViewsController
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[2] = array('href' => './services', 'caption' => 'Services', 'class'=>'active');
         $buffer = $template->render(array('wines' => $wines, 'wine' => $wine, 'navigation'=>$navigation));
+        $this->wineModel = null;
         echo $buffer;
     }
 

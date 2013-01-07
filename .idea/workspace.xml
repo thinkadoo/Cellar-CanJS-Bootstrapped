@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65211948-34ea-4fd6-987e-393271c93683" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/APIController.php" afterPath="$PROJECT_DIR$/api/controllers/APIController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/controllers/ViewsController.php" afterPath="$PROJECT_DIR$/api/controllers/ViewsController.php" />
     </list>
     <ignored path="Cellar-CanJS-Bootstrapped.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APIController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="30" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.73161036">
+            <state line="51" column="28" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-28.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="32" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.6560636">
               <folding />
             </state>
           </provider>
@@ -62,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/winesList.ejs" />
         <option value="$PROJECT_DIR$/mobi/footer.php" />
         <option value="$PROJECT_DIR$/mobi/js/application.js" />
         <option value="$PROJECT_DIR$/mobi/css/application.css" />
@@ -78,6 +87,7 @@
         <option value="$PROJECT_DIR$/api/lib/Database.php" />
         <option value="$PROJECT_DIR$/api/models/WineModel.php" />
         <option value="$PROJECT_DIR$/api/controllers/APIController.php" />
+        <option value="$PROJECT_DIR$/api/controllers/ViewsController.php" />
       </list>
     </option>
   </component>
@@ -461,7 +471,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="30" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.73161036">
+        <state line="51" column="28" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-28.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/ViewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="32" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.6560636">
           <folding />
         </state>
       </provider>
