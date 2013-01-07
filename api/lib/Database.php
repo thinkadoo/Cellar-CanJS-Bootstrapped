@@ -14,6 +14,10 @@ class Database
 
     }
 
+    function __destruct(){
+        $this->dbn = null;
+    }
+
     public function getConnection() {
         $dbhost="localhost";
         $dbuser="root";
