@@ -22,10 +22,6 @@ class WineModel
         $this->dbo->closeConnection();
     }
 
-    public function disconnectFromDB(){
-        $this->dbo->closeConnection();
-    }
-
     public function getWines() {
 
         $sql = "select * FROM wine ORDER BY id";

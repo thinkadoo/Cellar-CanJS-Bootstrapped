@@ -25,8 +25,6 @@ class APIController
     public function getWines() {
         if($this->app->request()->isAjax()){
             $result = $this->wineModel->getWines();
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();
@@ -35,8 +33,6 @@ class APIController
     public function getWine($id) {
         if($this->app->request()->isAjax()){
             $result = $this->wineModel->getWine($id);
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();
@@ -50,8 +46,6 @@ class APIController
             $requestArray = $this->utilities->urldecode_to_array($wine);
             $requestObject = $this->utilities->array_to_object($requestArray);
             $result = $this->wineModel->addWine($requestObject);
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();
@@ -65,8 +59,6 @@ class APIController
             $requestArray = $this->utilities->urldecode_to_array($wine);
             $requestObject = $this->utilities->array_to_object($requestArray);
             $result = $this->wineModel->updateWine($requestObject,$id);
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();
@@ -76,8 +68,6 @@ class APIController
     public function deleteWine($id) {
         if($this->app->request()->isAjax()){
             $result = $this->wineModel->deleteWine($id);
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();
@@ -87,8 +77,6 @@ class APIController
     public function findByName($query) {
         if($this->app->request()->isAjax()){
             $result = $this->wineModel->findByName($query);
-            $this->wineModel->disconnectFromDB();
-            $this->wineModel = null;
             echo $result;
         }else{
             $this->redirectToWelcome();

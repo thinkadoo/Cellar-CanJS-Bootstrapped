@@ -34,8 +34,6 @@ class ViewsController
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[1] = array('href' => './data', 'caption' => 'Data', 'class'=>'active');
         $buffer = $template->render(array('wines' => $wines, 'navigation'=>$navigation));
-        $this->wineModel->disconnectFromDB();
-        $this->wineModel = null;
         echo $buffer;
     }
 
@@ -48,8 +46,6 @@ class ViewsController
         // VARS passed to TWIG to change the persistent menu bar
         $navigation[2] = array('href' => './services', 'caption' => 'Services', 'class'=>'active');
         $buffer = $template->render(array('wines' => $wines, 'wine' => $wine, 'navigation'=>$navigation));
-        $this->wineModel->disconnectFromDB();
-        $this->wineModel = null;
         echo $buffer;
     }
 
